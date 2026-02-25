@@ -4,40 +4,187 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test Page</title>
-    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/test.css" />
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <!-- Logo -->
-        <img src="images/Life-luxury-logo.png" alt="Company logo" />
+    <header class="site-header">
+      <!-- Logo -->
+      <div id="logo">
+        <a href="index.html">
+          <img src="images/life-luxury-logo.png" alt="Life Luxury Logo" />
+        </a>
       </div>
-      <div class="nav-wrap">
-        <a class="brand" href="/">Life Luxury</a>
-        <nav class="nav-links">
-          <a href="#fleet">Fleet</a>
-          <a href="#experiences">Experiences</a>
-          <a href="#how">How It Works</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <a class="btn btn-primary" href="#contact">VIP Consultation</a>
+
+      <!-- NAV BAR -->
+      <nav class="lux-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+
+          <li class="has-dropdown">
+            <a href="#">Fleet ▾</a>
+            <ul class="dropdown">
+              <li><a href="#">Yachts</a></li>
+              <li><a href="#">Private Jets</a></li>
+              <li><a href="#">Helicopters</a></li>
+              <li><a href="#">Limousines</a></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="#">Packages/Pricing ▾</a>
+            <ul class="dropdown">
+              <li><a href="#">Signature Experiences</a></li>
+              <li><a href="#">Proposal Packages</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="test.html">TESTING PAGE</a></li>
+        </ul>
+      </nav>
+
+      <!-- SEPARATE CTA -->
+      <div class="header-cta">
+        <a href="contact.html" class="nav-cta">Request Quote</a>
       </div>
     </header>
-    <div class="wrapper">
-      <!--Hero section-->
-      <section class="hero-section">
-        <h2>Live the Luxury Lifestyle Without Owning It.</h2>
-        <p>
-          From private jets and helicopters to luxury yachts and executive
-          limousines, Life Luxury gives you exclusive access to unforgettable
-          travel and lifestyle experiences—tailored to your schedule, your
-          comfort, and your vision.
-        </p>
-        <button type="submit">Book Your Experience Today</button>
-      </section>
-      <!--Services section-->
-      <section class="signature-luxury"></section>
-    </div>
+    <!-- MAIN CONTENT -->
+    <!--DO NOT DELETE ABOVE -->
+    <!-- PRICING SECTION (Monthly / Yearly Toggle) -->
+    <section class="lux-pricing" id="pricing">
+      <div class="lux-wrap">
+        <header class="lux-head">
+          <p class="lux-kicker">MEMBERSHIP PRICING</p>
+          <h2>Choose Your Experience</h2>
+          <p class="lux-sub">
+            Dark navy, ivory, and champagne with refined gold accents.
+          </p>
+
+          <div
+            class="lux-toggle-row"
+            role="group"
+            aria-label="Billing period toggle"
+          >
+            <span class="lux-toggle-label">Monthly</span>
+
+            <button
+              class="lux-toggle"
+              id="billingToggle"
+              type="button"
+              aria-pressed="false"
+              aria-label="Toggle billing period"
+            >
+              <span class="lux-toggle-knob"></span>
+            </button>
+
+            <span class="lux-toggle-label">
+              Yearly <span class="lux-save-pill">Save 15%</span>
+            </span>
+          </div>
+        </header>
+
+        <div class="lux-grid">
+          <!-- PLAN 1 -->
+          <article class="lux-card">
+            <div class="lux-card-top">
+              <h3>Classic</h3>
+              <p>Elegant entry plan for occasional bookings.</p>
+            </div>
+
+            <div class="lux-price">
+              <span class="lux-currency">$</span>
+              <span class="lux-amount" data-month="29" data-year="296">29</span>
+              <span class="lux-per" data-month="/mo" data-year="/yr">/mo</span>
+            </div>
+
+            <p
+              class="lux-billed"
+              data-month="Billed monthly"
+              data-year="Billed yearly (2 months free)"
+            >
+              Billed monthly
+            </p>
+
+            <ul class="lux-list">
+              <li>Priority inquiries</li>
+              <li>Concierge coordination</li>
+              <li>Email support</li>
+            </ul>
+
+            <a class="lux-btn" href="#contact">Select Classic</a>
+          </article>
+
+          <!-- PLAN 2 (FEATURED) -->
+          <article class="lux-card lux-featured">
+            <div class="lux-badge" aria-hidden="true">Most Popular</div>
+
+            <div class="lux-card-top">
+              <h3>Signature</h3>
+              <p>Our best value for consistent luxury access.</p>
+            </div>
+
+            <div class="lux-price">
+              <span class="lux-currency">$</span>
+              <span class="lux-amount" data-month="59" data-year="602">59</span>
+              <span class="lux-per" data-month="/mo" data-year="/yr">/mo</span>
+            </div>
+
+            <p
+              class="lux-billed"
+              data-month="Billed monthly"
+              data-year="Billed yearly (2 months free)"
+            >
+              Billed monthly
+            </p>
+
+            <ul class="lux-list">
+              <li>Everything in Classic</li>
+              <li>Preferred scheduling</li>
+              <li>Premium support</li>
+            </ul>
+
+            <a class="lux-btn lux-btn-solid" href="#contact"
+              >Choose Signature</a
+            >
+          </article>
+
+          <!-- PLAN 3 -->
+          <article class="lux-card">
+            <div class="lux-card-top">
+              <h3>Elite</h3>
+              <p>For high-volume clients and VIP coordination.</p>
+            </div>
+
+            <div class="lux-price">
+              <span class="lux-currency">$</span>
+              <span class="lux-amount" data-month="99" data-year="1010"
+                >99</span
+              >
+              <span class="lux-per" data-month="/mo" data-year="/yr">/mo</span>
+            </div>
+
+            <p
+              class="lux-billed"
+              data-month="Billed monthly"
+              data-year="Billed yearly (2 months free)"
+            >
+              Billed monthly
+            </p>
+
+            <ul class="lux-list">
+              <li>Everything in Signature</li>
+              <li>Dedicated concierge</li>
+              <li>Phone support</li>
+            </ul>
+
+            <a class="lux-btn" href="#contact">Select Elite</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <script src="js/pricing.js"></script>
   </body>
 </html>
