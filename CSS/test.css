@@ -492,7 +492,7 @@ nav a:hover {
   text-align: center;
   border-radius: 999px;
   border: 1.5px solid #071428;
-  background-color: Ivory;
+  background-color: ivory;
   color: #071428;
   text-decoration: none;
   font-weight: 700;
@@ -526,334 +526,106 @@ nav a:hover {
   padding: 40px 20px;
 }
 /*/DO NOT DELETE ABOVE THIS LINE*/
-/* ---------- LUXURY PALETTE ---------- */
-:root {
-  --navy: #071a2b;
-  --navy-2: #0b2741;
-  --ivory: #fff9ed;
-  --champagne: #f3e4cf;
-  --gold: #c9a24a;
-  --gold-2: #e2c06a;
-  --ink: #0a1a2f;
-  --line: rgba(7, 26, 43, 0.16);
-  --shadow: 0 18px 50px rgba(7, 26, 43, 0.15);
-}
-
-/* ---------- SECTION ---------- */
-.lux-pricing {
-  padding: 92px 20px;
-  background: linear-gradient(180deg, #ffffff 0%, #fbf6ec 100%);
-  color: var(--navy);
-  overflow: hidden;
-}
-.lux-wrap {
-  max-width: 1120px;
+/* FAQ SECTION */
+.faq-section {
+  padding: 90px 20px;
+  background: #ffffff;
+  color: #08073;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
-/* ---------- TYPOGRAPHY (High-end) ---------- */
-/* Uses system fonts by default; if you want true luxury fonts, add the optional Google Fonts snippet below. */
-.lux-head {
+.faq-header {
   text-align: center;
-  margin-bottom: 42px;
-}
-.lux-kicker {
-  letter-spacing: 0.22em;
-  font-weight: 700;
-  font-size: 12px;
-  color: var(--navy-2);
-  opacity: 0.9;
-  margin: 0 0 10px;
-}
-.lux-head h2 {
-  margin: 0 0 10px;
-  font-size: clamp(34px, 4vw, 48px);
-  letter-spacing: 0.02em;
-  font-family: ui-serif, "Times New Roman", Georgia, serif;
-  position: relative;
-  display: inline-block;
-}
-.lux-head h2::after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 74%;
-  margin: 14px auto 0;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    var(--gold) 40%,
-    var(--gold-2) 60%,
-    transparent 100%
-  );
-  opacity: 0.9;
-}
-.lux-sub {
-  margin: 0;
-  color: rgba(7, 26, 43, 0.78);
-  font-size: 16px;
+  max-width: 760px;
+  margin: 0 auto 50px;
 }
 
-/* ---------- TOGGLE ---------- */
-.lux-toggle-row {
-  margin: 26px auto 0;
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  padding: 10px 14px;
-  border-radius: 999px;
-  background: rgba(243, 228, 207, 0.55);
-  border: 1px solid rgba(201, 162, 74, 0.35);
-  box-shadow: 0 10px 30px rgba(7, 26, 43, 0.08);
-}
-.lux-toggle-label {
-  font-size: 14px;
-  color: rgba(7, 26, 43, 0.85);
-  white-space: nowrap;
-}
-.lux-save-pill {
-  display: inline-block;
-  margin-left: 6px;
-  padding: 4px 10px;
-  border-radius: 999px;
-  font-size: 12px;
-  letter-spacing: 0.02em;
-  color: var(--navy);
-  background: linear-gradient(180deg, var(--champagne) 0%, #fff 100%);
-  border: 1px solid rgba(201, 162, 74, 0.55);
-}
-.lux-toggle {
-  width: 56px;
-  height: 30px;
-  border-radius: 999px;
-  border: 1px solid rgba(7, 26, 43, 0.18);
-  background: linear-gradient(180deg, #fff 0%, #f5efe3 100%);
-  position: relative;
-  cursor: pointer;
-  padding: 0;
-  transition:
-    transform 0.18s ease,
-    box-shadow 0.18s ease;
-}
-.lux-toggle:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 10px 24px rgba(7, 26, 43, 0.1);
-}
-.lux-toggle-knob {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: radial-gradient(
-    circle at 30% 30%,
-    #fff 0%,
-    var(--gold-2) 55%,
-    var(--gold) 100%
-  );
-  position: absolute;
-  top: 50%;
-  left: 3px;
-  transform: translateY(-50%);
-  transition:
-    left 0.22s ease,
-    filter 0.22s ease;
-  box-shadow: 0 10px 18px rgba(201, 162, 74, 0.25);
-}
-.lux-toggle.is-yearly .lux-toggle-knob {
-  left: 29px;
-  filter: saturate(1.05);
+.faq-header p {
+  color: #555;
 }
 
-/* ---------- GRID ---------- */
-.lux-grid {
+/* FAQ WRAP */
+.faq-wrap {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-  align-items: stretch;
-}
-@media (max-width: 980px) {
-  .lux-grid {
-    grid-template-columns: 1fr;
-  }
+  gap: 14px;
 }
 
-/* ---------- CARD ---------- */
-.lux-card {
-  background: linear-gradient(180deg, var(--ivory) 0%, #ffffff 100%);
-  border: 1px solid rgba(7, 26, 43, 0.14);
-  border-radius: 22px;
-  padding: 26px 24px;
-  position: relative;
-  box-shadow: 0 14px 40px rgba(7, 26, 43, 0.1);
-  transform: translateY(8px);
-  opacity: 0;
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    border-color 0.25s ease;
+/* ITEM */
+.faq-item {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  background: #fafafa;
   overflow: hidden;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
 }
 
-/* subtle champagne wash */
-.lux-card::before {
-  content: "";
-  position: absolute;
-  inset: -2px;
-  background: radial-gradient(
-    1200px 280px at 20% 0%,
-    rgba(243, 228, 207, 0.7) 0%,
-    transparent 55%
-  );
-  pointer-events: none;
-  opacity: 0.75;
+.faq-item[open] {
+  border-color: #d4af37;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.06);
 }
 
-/* gold hairline highlight */
-.lux-card::after {
-  content: "";
-  position: absolute;
-  left: 22px;
-  right: 22px;
-  top: 0;
-  height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    rgba(201, 162, 74, 0.85) 35%,
-    rgba(226, 192, 106, 0.9) 65%,
-    transparent 100%
-  );
-  opacity: 0.85;
-}
-
-.lux-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow);
-  border-color: rgba(201, 162, 74, 0.45);
-}
-
-.lux-card-top {
-  position: relative;
-  z-index: 1;
-  margin-bottom: 14px;
-}
-.lux-card h3 {
-  margin: 0 0 6px;
-  font-size: 22px;
-  font-family: ui-serif, "Times New Roman", Georgia, serif;
-  letter-spacing: 0.02em;
-  color: var(--navy);
-}
-.lux-card p {
-  margin: 0;
-  color: rgba(7, 26, 43, 0.78);
-  font-size: 14px;
-}
-
-/* featured */
-.lux-featured {
-  border: 1px solid rgba(201, 162, 74, 0.55);
-  box-shadow: 0 20px 60px rgba(7, 26, 43, 0.16);
-}
-.lux-badge {
-  position: absolute;
-  top: 18px;
-  right: 18px;
-  z-index: 2;
-  padding: 7px 12px;
-  border-radius: 999px;
-  font-size: 12px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--navy);
-  background: linear-gradient(180deg, var(--champagne) 0%, #fff 100%);
-  border: 1px solid rgba(201, 162, 74, 0.55);
-}
-
-/* ---------- PRICE ---------- */
-.lux-price {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: baseline;
-  gap: 6px;
-  margin: 10px 0 4px;
-}
-.lux-currency {
-  font-size: 16px;
-  color: rgba(7, 26, 43, 0.85);
-}
-.lux-amount {
-  font-size: 46px;
-  font-weight: 800;
-  letter-spacing: 0.01em;
-  color: var(--navy);
-  line-height: 1;
-}
-.lux-per {
-  font-size: 14px;
-  color: rgba(7, 26, 43, 0.78);
-}
-.lux-billed {
-  position: relative;
-  z-index: 1;
-  margin: 0 0 14px;
-  font-size: 13px;
-  color: rgba(7, 26, 43, 0.7);
-}
-
-/* ---------- LIST ---------- */
-.lux-list {
-  position: relative;
-  z-index: 1;
+/* SUMMARY */
+.faq-item summary {
+  cursor: pointer;
   list-style: none;
-  padding: 0;
-  margin: 0 0 18px;
-}
-.lux-list li {
-  padding: 10px 0;
-  border-top: 1px solid rgba(7, 26, 43, 0.1);
-  color: rgba(7, 26, 43, 0.88);
-  font-size: 14px;
+  padding: 18px 18px;
+  font-weight: 600;
+  position: relative;
+  outline: none;
 }
 
-/* ---------- BUTTON ---------- */
-.lux-btn {
-  position: relative;
-  z-index: 1;
-  display: inline-block;
-  width: 100%;
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+/* PLUS/MINUS ICON */
+.faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+  color: #08073;
+  transition: transform 0.2s ease;
+}
+
+.faq-item[open] summary::after {
+  content: "–";
+}
+
+/* CONTENT */
+.faq-content {
+  padding: 0 18px 18px 18px;
+}
+
+.faq-content p {
+  margin: 0;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* CTA */
+.faq-cta {
   text-align: center;
-  padding: 12px 14px;
+  margin-top: 35px;
+}
+.faq-cta a {
+  background: linear-gradient(135deg, #c8a85a, #f2d38a, #b88a2b);
+  color: #071428;
+  padding: 12px 24px;
   border-radius: 999px;
-  color: var(--navy);
   text-decoration: none;
   font-weight: 700;
-  letter-spacing: 0.02em;
-  border: 1px solid rgba(201, 162, 74, 0.7);
-  background: linear-gradient(180deg, #ffffff 0%, #fbf5ea 100%);
-  transition:
-    transform 0.18s ease,
-    box-shadow 0.18s ease,
-    background 0.18s ease;
+  letter-spacing: 0.5px;
+  transition: all 0.25s ease;
 }
-.lux-btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 14px 26px rgba(7, 26, 43, 0.14);
-  background: linear-gradient(180deg, var(--champagne) 0%, #ffffff 100%);
-}
-
-.lux-btn-solid {
-  border: 1px solid rgba(7, 26, 43, 0.14);
-  color: #ffffff;
-  background: linear-gradient(135deg, var(--navy) 0%, #0a2b4b 100%);
-  box-shadow: 0 18px 34px rgba(7, 26, 43, 0.18);
-}
-.lux-btn-solid:hover {
-  background: linear-gradient(135deg, #0a2b4b 0%, var(--navy) 100%);
-}
-
-/* ---------- REVEAL ANIMATION ---------- */
-.lux-card.is-visible {
-  transform: translateY(0);
-  opacity: 1;
+.faq-cta a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.38);
+  filter: brightness(1.05);
 }
