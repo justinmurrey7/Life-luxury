@@ -1,13 +1,14 @@
-<!DOCTYPE html>
+]<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Life Luxury Yachts</title>
-    <link rel="stylesheet" href="CSS/main.css">
-</head>
-<body>
-     <header class="site-header">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yachts | Life Luxury</title>
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/yacht.css" />
+  </head>
+  <body>
+    <header class="site-header">
       <!-- Logo -->
       <div id="logo">
         <a href="index.html">
@@ -64,7 +65,483 @@
         <a href="contact.html" class="nav-cta">Request Quote</a>
       </div>
     </header>
-    <div class="wrapper"></div>
-  <!--DON'T DELETE ABOVE — HEADER AND NAV STRUCTURE IS REQUIRED FOR SITE-WIDE CONSISTENCY -->
-  
+    <script src="JS/hammer-BTN.js" defer></script>
+    <!--DO NOT DELETE ABOVE -->
+
+    <!-- ===========================
+ LIFE LUXURY — YACHT PAGE SECTIONS
+ Matches your existing .lux- class system
+ (Drop into yacht.html inside <main>)
+=========================== -->
+
+    <!-- HERO -->
+    <section class="lux-hero yacht-hero" id="top">
+      <div class="lux-wrap">
+        <div class="lux-hero-content">
+          <h1>Private Yacht Experiences</h1>
+          <p>
+            Luxury, relaxation, and unforgettable moments on your own fully
+            staffed yacht—designed for real-life celebrations and
+            once-in-a-lifetime memories.
+          </p>
+
+          <div class="lux-hero-actions">
+            <a class="lux-btn" href="#consultation">Start Your Yacht Journey</a>
+            <a class="lux-btn lux-btn-ghost" href="pricing.html"
+              >View Membership</a
+            >
+          </div>
+
+          <div class="lux-trust-row" aria-label="Key benefits">
+            <span class="lux-trust-pill">Fully staffed</span>
+            <span class="lux-trust-pill">Concierge planning</span>
+            <span class="lux-trust-pill">Flat-rate options</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK CONSULT STRIP -->
+    <section class="lux-quick" aria-label="Quick quote strip">
+      <div class="lux-wrap">
+        <form class="lux-quick-form" action="#consultation">
+          <div class="lux-quick-grid">
+            <label class="lux-field">
+              <span class="lux-label">Occasion</span>
+              <select class="lux-input" name="occasion">
+                <option>Romantic getaway</option>
+                <option>Family vacation</option>
+                <option>Celebration / birthday</option>
+                <option>Anniversary</option>
+                <option>Friends trip</option>
+                <option>Corporate retreat</option>
+                <option>Not sure yet</option>
+              </select>
+            </label>
+
+            <label class="lux-field">
+              <span class="lux-label">Guests</span>
+              <select class="lux-input" name="guests">
+                <option>2</option>
+                <option>3–4</option>
+                <option>5–6</option>
+                <option>7–8</option>
+                <option>9+</option>
+              </select>
+            </label>
+
+            <label class="lux-field">
+              <span class="lux-label">Dates</span>
+              <select class="lux-input" name="dates">
+                <option>Next 2 weeks</option>
+                <option>Next month</option>
+                <option>2–3 months</option>
+                <option>Flexible</option>
+              </select>
+            </label>
+
+            <label class="lux-field">
+              <span class="lux-label">Budget</span>
+              <select class="lux-input" name="budget">
+                <option>Prefer best value</option>
+                <option>Comfortable luxury</option>
+                <option>Go all-out</option>
+              </select>
+            </label>
+
+            <button class="lux-btn" type="submit">Get a Custom Quote</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- FLIP-FLOP #1: IMAGE LEFT / TEXT RIGHT -->
+    <section class="lux-split" aria-label="The Life Luxury Difference">
+      <div class="lux-wrap">
+        <div class="lux-split-grid">
+          <div class="lux-split-media">
+            <img
+              src="images/relax-on-yacht.png"
+              alt="Luxury yacht lifestyle on deck at sunset"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="lux-split-text">
+            <h2>The Life Luxury Difference</h2>
+            <p>
+              We make luxury feel effortless. Our yacht experiences are curated
+              for comfort, elegance, and unforgettable moments—without the
+              stress of planning every detail.
+            </p>
+
+            <ul class="lux-list">
+              <li>White-glove concierge planning</li>
+              <li>Fully staffed crew (captain + support)</li>
+              <li>Curated upgrades and experience add-ons</li>
+            </ul>
+
+            <a class="lux-btn" href="#consultation">Talk to a Concierge</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POPULAR JOURNEYS (CARDS) -->
+    <section class="lux-section" id="journeys">
+      <div class="lux-wrap">
+        <header class="lux-head">
+          <h2>Popular Yacht Journeys</h2>
+          <p class="lux-sub">
+            Choose a vibe—then we tailor the yacht, itinerary, and finishing
+            touches.
+          </p>
+        </header>
+
+        <div class="lux-grid lux-grid-4">
+          <article class="lux-mini-card">
+            <h3>Romantic Escapes</h3>
+            <p>
+              Sunsets, proposals, anniversaries, and private dining on the
+              water.
+            </p>
+          </article>
+
+          <article class="lux-mini-card">
+            <h3>Family Vacations</h3>
+            <p>
+              Adventure + relaxation with space to reconnect and make memories.
+            </p>
+          </article>
+
+          <article class="lux-mini-card">
+            <h3>Celebrations</h3>
+            <p>
+              Birthdays, milestones, and “we made it” moments—done in style.
+            </p>
+          </article>
+
+          <article class="lux-mini-card">
+            <h3>Friends Getaways</h3>
+            <p>Weekend escapes, coastal cruising, and a touch of elite fun.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLIP-FLOP #2: TEXT LEFT / IMAGE RIGHT -->
+    <section class="lux-split lux-split-reverse" aria-label="What's Included">
+      <div class="lux-wrap">
+        <div class="lux-split-grid">
+          <div class="lux-split-text">
+            <h2>What’s Included</h2>
+            <p>
+              Your yacht experience is designed to feel seamless. Final
+              inclusions may vary by yacht and destination, but most journeys
+              include:
+            </p>
+
+            <ul class="lux-list">
+              <li>Luxury yacht accommodations</li>
+              <li>Captain + professional crew</li>
+              <li>Concierge itinerary design</li>
+              <li>Onboard comfort amenities</li>
+              <li>Optional chef + dining upgrades</li>
+              <li>Optional water-toys + excursions</li>
+            </ul>
+
+            <p class="lux-note">
+              Want something specific? Tell us what “perfect” looks like—we’ll
+              build around it.
+            </p>
+          </div>
+
+          <div class="lux-split-media">
+            <img
+              src="images/luxury-dinner.png"
+              alt="Elegant yacht dining setup with ocean views"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY STRIP -->
+    <section class="lux-section alt" aria-label="Gallery">
+      <div class="lux-wrap">
+        <header class="lux-head">
+          <h2>A Glimpse On Board</h2>
+          <p class="lux-sub">
+            A few moments that capture the feel of a Life Luxury yacht
+            experience.
+          </p>
+        </header>
+
+        <div class="lux-gallery" role="region" aria-label="Yacht photo gallery">
+          <figure class="lux-gallery-item">
+            <img
+              src="images/relax-on-yacht.png"
+              alt="Yacht deck lounge"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="lux-gallery-item">
+            <img
+              src="images/yeah-open-water.png"
+              alt="Yacht on open water"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="lux-gallery-item">
+            <img
+              src="images/yacht-cabin.png"
+              alt="Cabin interior luxury"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="lux-gallery-item">
+            <img
+              src="images/Couple-toast.png"
+              alt="Champagne at sunset"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="lux-gallery-item">
+            <img
+              src="images/luxury-dinner.png"
+              alt="Dining on deck"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTINATIONS -->
+    <section class="lux-section" id="destinations">
+      <div class="lux-wrap">
+        <header class="lux-head">
+          <h2>Destinations</h2>
+          <p class="lux-sub">
+            We’ll recommend the best locations based on your dates, vibe, and
+            budget.
+          </p>
+        </header>
+
+        <div class="lux-destinations">
+          <div class="lux-destinations-media">
+            <img
+              src="images/dream-vacation.png"
+              alt="Beautiful coastline destination for yacht travel"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="lux-destinations-text">
+            <div class="lux-chips" role="list" aria-label="Destination options">
+              <button class="lux-chip" type="button">Bahamas</button>
+              <button class="lux-chip" type="button">Florida Coast</button>
+              <button class="lux-chip" type="button">Caribbean</button>
+              <button class="lux-chip" type="button">Mediterranean</button>
+              <button class="lux-chip" type="button">Custom</button>
+            </div>
+
+            <p class="lux-note">
+              Not seeing your destination? Ask us—if it’s on water, we’ll
+              explore options.
+            </p>
+
+            <a class="lux-btn lux-btn-ghost" href="#consultation"
+              >Ask About Your Destination</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING PREVIEW -->
+    <section class="lux-pricing-preview alt" id="membership">
+      <div class="lux-wrap">
+        <header class="lux-head">
+          <h2>Membership Options</h2>
+          <p class="lux-sub">
+            Get priority access, concierge planning, and exclusive member
+            pricing for yacht experiences.
+          </p>
+        </header>
+
+        <div class="lux-grid lux-grid-2">
+          <!-- CLASSIC -->
+          <article class="lux-card">
+            <div class="lux-card-top">
+              <h3>Classic</h3>
+              <p>Elegant entry for occasional yacht journeys.</p>
+            </div>
+
+            <div class="lux-badge">Popular</div>
+
+            <div class="lux-price">
+              <span class="lux-currency">$</span>
+              <span class="lux-amount" data-month="150" data-year="500"
+                >150</span
+              >
+              <span class="lux-per" data-month="/mo" data-year="/yr">/mo</span>
+            </div>
+
+            <ul class="lux-list">
+              <li>Priority yacht inquiries</li>
+              <li>Concierge coordination</li>
+              <li>Member-only pricing access</li>
+            </ul>
+
+            <a class="lux-btn" href="pricing.html">Select Classic</a>
+          </article>
+
+          <!-- ELITE -->
+          <article class="lux-card lux-elite">
+            <div class="lux-card-top">
+              <h3>Elite</h3>
+              <p>VIP priority access with upgrades and peak-date preference.</p>
+            </div>
+
+            <div class="lux-badge">Most Popular</div>
+
+            <div class="lux-price">
+              <span class="lux-currency">$</span>
+              <span class="lux-amount" data-month="250" data-year="1299"
+                >250</span
+              >
+              <span class="lux-per" data-month="/mo" data-year="/yr">/mo</span>
+            </div>
+
+            <ul class="lux-list">
+              <li>VIP priority booking</li>
+              <li>Dedicated concierge support</li>
+              <li>Exclusive upgrades when available</li>
+              <li>Preferred peak-date access</li>
+            </ul>
+
+            <a class="lux-btn lux-elite-btn" href="pricing.html"
+              >Select Elite</a
+            >
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOCIAL PROOF -->
+    <section class="lux-section" id="reviews">
+      <div class="lux-wrap">
+        <header class="lux-head">
+          <h2>Guest Reviews</h2>
+          <p class="lux-sub">
+            Real reactions from clients who wanted something unforgettable.
+          </p>
+        </header>
+
+        <div class="lux-grid lux-grid-3">
+          <article class="lux-quote">
+            <p class="lux-stars" aria-label="5 out of 5 stars">★★★★★</p>
+            <p>
+              “It felt like a movie. The concierge handled everything, and we
+              just showed up and lived the moment.”
+            </p>
+            <p class="lux-quote-by">— Client, Anniversary Escape</p>
+          </article>
+
+          <article class="lux-quote">
+            <p class="lux-stars" aria-label="5 out of 5 stars">★★★★★</p>
+            <p>
+              “Our family will talk about this forever. It was easy, beautiful,
+              and genuinely relaxing.”
+            </p>
+            <p class="lux-quote-by">— Client, Family Journey</p>
+          </article>
+
+          <article class="lux-quote">
+            <p class="lux-stars" aria-label="5 out of 5 stars">★★★★★</p>
+            <p>
+              “Elite was worth it. We got priority options and upgrades we
+              didn’t even expect.”
+            </p>
+            <p class="lux-quote-by">— Client, Weekend Getaway</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="lux-section alt" id="faq">
+      <div class="lux-wrap">
+        <header class="lux-head">
+          <h2>Yacht FAQ</h2>
+          <p class="lux-sub">Quick answers to help you book with confidence.</p>
+        </header>
+
+        <div class="lux-faq">
+          <details class="lux-faq-item">
+            <summary>How does pricing work?</summary>
+            <p>
+              Membership gives you priority access and concierge planning. Your
+              final quote depends on destination, dates, yacht size, and
+              inclusions.
+            </p>
+          </details>
+
+          <details class="lux-faq-item">
+            <summary>What’s included in most yacht experiences?</summary>
+            <p>
+              Typically: captain + crew, concierge planning, accommodations, and
+              comfort amenities. Chef, beverages, excursions, and toys can be
+              added based on your preferences.
+            </p>
+          </details>
+
+          <details class="lux-faq-item">
+            <summary>How far in advance should I book?</summary>
+            <p>
+              Peak dates book quickly. If you can, plan 4–8 weeks out. For
+              special occasions, earlier is even better.
+            </p>
+          </details>
+
+          <details class="lux-faq-item">
+            <summary>Is this beginner-friendly?</summary>
+            <p>
+              Absolutely. You don’t need yacht experience—your crew and
+              concierge guide you through the entire journey.
+            </p>
+          </details>
+
+          <details class="lux-faq-item">
+            <summary>What happens if weather changes?</summary>
+            <p>
+              Safety comes first. We’ll coordinate alternatives such as
+              rescheduling, route adjustments, or destination swaps depending on
+              conditions and policies.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA / CONSULTATION -->
+    <section class="lux-cta" id="consultation">
+      <div class="lux-wrap">
+        <h2>Design Your Yacht Experience</h2>
+        <p>
+          Tell us your occasion, ideal vibe, and timeframe. A Life Luxury
+          concierge will reach out with tailored options and next steps.
+        </p>
+
+        <div class="lux-cta-actions">
+          <a class="lux-btn" href="contact.html">Schedule Consultation</a>
+          <a class="lux-btn lux-btn-ghost" href="pricing.html"
+            >Compare Memberships</a
+          >
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
