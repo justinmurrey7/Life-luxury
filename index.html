@@ -15,41 +15,57 @@
         </a>
       </div>
 
-      <!-- NAV BAR -->
-      <nav class="lux-nav">
+      <!-- Hamburger -->
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="luxNav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- NAV -->
+      <nav class="lux-nav" id="luxNav">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
 
-          <li class="has-dropdown">
+          <li class="has-dropdown" tabindex="0">
             <a href="#">Fleet ▾</a>
             <ul class="dropdown">
-              <li><a href="#">Yachts</a></li>
-              <li><a href="#">Private Jets</a></li>
-              <li><a href="#">Helicopters</a></li>
-              <li><a href="#">Limousines</a></li>
+              <li><a href="yachts.html">Yachts</a></li>
+              <li><a href="jets.html">Private Jets</a></li>
+              <li><a href="helicopters.html">Helicopters</a></li>
+              <li><a href="limos.html">Limousines</a></li>
             </ul>
           </li>
 
-          <li class="has-dropdown">
+          <li class="has-dropdown" tabindex="0">
             <a href="#">Packages/Pricing ▾</a>
             <ul class="dropdown">
-              <li><a href="#">Signature Experiences</a></li>
-              <li><a href="#">Proposal Packages</a></li>
-              <li><a href="#">Pricing</a></li>
+              <li><a href="packages.html">Signature Experiences</a></li>
+              <li><a href="proposal.html">Proposal Packages</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
             </ul>
           </li>
 
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
           <li><a href="test.html">TESTING PAGE</a></li>
         </ul>
       </nav>
 
-      <!-- SEPARATE CTA -->
+      <!-- CTA -->
       <div class="header-cta">
         <a href="contact.html" class="nav-cta">Request Quote</a>
       </div>
     </header>
+
+    <!-- Put script BEFORE closing body and use defer -->
 
     <div class="wrapper">
       <section class="hero-section">
@@ -221,13 +237,18 @@
             <article class="lux-card">
               <div class="lux-card-top">
                 <h3>Classic</h3>
-                <p>Elegant entry plan for occasional bookings.</p>
+                <p>
+                  <br />
+                  Perfect for first-time clients or special occasions.
+                  <br />Enjoy a refined luxury service with full concierge
+                  support and seamless booking..
+                </p>
               </div>
 
               <div class="lux-price">
                 <span class="lux-currency">$</span>
-                <span class="lux-amount" data-month="29" data-year="296"
-                  >29</span
+                <span class="lux-amount" data-month="150" data-year="500"
+                  >150</span
                 >
                 <span class="lux-per" data-month="/mo" data-year="/yr"
                   >/mo</span
@@ -245,9 +266,11 @@
               <ul class="lux-list">
                 <li>Priority inquiries</li>
                 <li>Concierge coordination</li>
-                <li>Email support</li>
+                <li>On site 24/7 support</li>
+                <li>Access to all Life Luxury services</li>
+                <li>Seasonal offers and upgrades</li>
+                <li>Personalized welcome experience</li>
               </ul>
-
               <a class="lux-btn" href="#contact">Select Classic</a>
             </article>
 
@@ -257,13 +280,18 @@
 
               <div class="lux-card-top">
                 <h3>Signature</h3>
-                <p>Our best value for consistent luxury access.</p>
+                <p>
+                  <br />
+                  For clients seeking a deeper luxury experience. <br />Ideal
+                  for celebrations, weekend escapes, and curated travel with
+                  elevated service.
+                </p>
               </div>
 
               <div class="lux-price">
                 <span class="lux-currency">$</span>
-                <span class="lux-amount" data-month="59" data-year="602"
-                  >59</span
+                <span class="lux-amount" data-month="250" data-year="700"
+                  >250</span
                 >
                 <span class="lux-per" data-month="/mo" data-year="/yr"
                   >/mo</span
@@ -280,10 +308,12 @@
 
               <ul class="lux-list">
                 <li>Everything in Classic</li>
-                <li>Preferred scheduling</li>
-                <li>Premium support</li>
+                <li>Access to any two Life Luxury services</li>
+                <li>Personalized travel and experience itinerary</li>
+                <li>Exclusive seasonal offers and upgrades</li>
+                <li>Premium welcome and gift experience</li>
+                <li>VIP and priority access</li>
               </ul>
-
               <a class="lux-btn lux-btn-solid" href="#contact"
                 >Choose Signature</a
               >
@@ -293,13 +323,17 @@
             <article class="lux-card">
               <div class="lux-card-top">
                 <h3>Elite</h3>
-                <p>For high-volume clients and VIP coordination.</p>
+                <br />
+                <p>
+                  FThe ultimate Life Luxury journey. <br />Enjoy three premium
+                  services combined into one seamless, once-in-a-lifetime
+                  experience.
+                </p>
               </div>
-
               <div class="lux-price">
                 <span class="lux-currency">$</span>
-                <span class="lux-amount" data-month="99" data-year="1010"
-                  >99</span
+                <span class="lux-amount" data-month="450" data-year="1000"
+                  >450</span
                 >
                 <span class="lux-per" data-month="/mo" data-year="/yr"
                   >/mo</span
@@ -316,8 +350,12 @@
 
               <ul class="lux-list">
                 <li>Everything in Signature</li>
-                <li>Dedicated concierge</li>
-                <li>Phone support</li>
+                <li>Access to any three Life Luxury services</li>
+                <li>Personal luxury travel designer</li>
+                <li>Fully customized itinerary and scheduling</li>
+                <li>VIP and priority access</li>
+                <li>Exclusive upgrades and luxury amenities</li>
+                <li>Premium welcome and gift experience</li>
               </ul>
 
               <a class="lux-btn" href="#contact">Select Elite</a>
@@ -549,118 +587,282 @@
         </div>
       </section>
       <!-- FAQ ACCORDION -->
-    <section class="faq-section" id="faq">
-      <div class="faq-header">
-        <h2>Frequently Asked Questions</h2>
-        <p>
-          Quick answers to help you plan your Life Luxury experience with
-          confidence.
-        </p>
-      </div>
+      <section class="faq-section" id="faq">
+        <div class="faq-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>
+            Quick answers to help you plan your Life Luxury experience with
+            confidence.
+          </p>
+        </div>
 
-      <div class="faq-wrap">
-        <details class="faq-item">
-          <summary>What’s included in a yacht booking?</summary>
-          <div class="faq-content">
-            <p>
-              Yacht experiences typically include a private vessel, professional
-              crew, onboard amenities, and itinerary planning. Add-ons like land
-              to yacht or helicopter access, gourmet catering, chef service,
-              champagne packages, water toys, and special celebrations can be
-              arranged based on your package and location.
-            </p>
-          </div>
-        </details>
+        <div class="faq-wrap">
+          <details class="faq-item">
+            <summary>What’s included in a yacht booking?</summary>
+            <div class="faq-content">
+              <p>
+                Yacht experiences typically include a private vessel,
+                professional crew, onboard amenities, and itinerary planning.
+                Add-ons like land to yacht or helicopter access, gourmet
+                catering, chef service, champagne packages, water toys, and
+                special celebrations can be arranged based on your package and
+                location.
+              </p>
+            </div>
+          </details>
 
-        <details class="faq-item">
-          <summary>How far in advance should I book?</summary>
-          <div class="faq-content">
-            <p>
-              We recommend booking as early as possible—especially for weekends,
-              holidays, and peak travel seasons. For signature experiences, 2–4
-              weeks is ideal. Last-minute requests are sometimes possible
-              depending on availability.
-            </p>
-          </div>
-        </details>
+          <details class="faq-item">
+            <summary>How far in advance should I book?</summary>
+            <div class="faq-content">
+              <p>
+                We recommend booking as early as possible—especially for
+                weekends, holidays, and peak travel seasons. For signature
+                experiences, 2–4 weeks is ideal. Last-minute requests are
+                sometimes possible depending on availability.
+              </p>
+            </div>
+          </details>
 
-        <details class="faq-item">
-          <summary>Deposits &amp; cancellations?</summary>
-          <div class="faq-content">
-            <p>
-              Most bookings require a deposit to reserve your date. Cancellation
-              and rescheduling policies vary by operator, season, and package.
-              We’ll provide clear terms before you confirm, so you know exactly
-              what’s refundable and what’s not.
-            </p>
-          </div>
-        </details>
+          <details class="faq-item">
+            <summary>Deposits &amp; cancellations?</summary>
+            <div class="faq-content">
+              <p>
+                Most bookings require a deposit to reserve your date.
+                Cancellation and rescheduling policies vary by operator, season,
+                and package. We’ll provide clear terms before you confirm, so
+                you know exactly what’s refundable and what’s not.
+              </p>
+            </div>
+          </details>
 
-        <details class="faq-item">
-          <summary>What locations do you serve?</summary>
-          <div class="faq-content">
-            <p>
-              Life Luxury coordinates experiences in select destinations and can
-              arrange travel-based itineraries upon request. Tell us your
-              preferred location and dates, and we’ll confirm availability and
-              options.
-            </p>
-          </div>
-        </details>
+          <details class="faq-item">
+            <summary>What locations do you serve?</summary>
+            <div class="faq-content">
+              <p>
+                Life Luxury coordinates experiences in select destinations and
+                can arrange travel-based itineraries upon request. Tell us your
+                preferred location and dates, and we’ll confirm availability and
+                options.
+              </p>
+            </div>
+          </details>
 
-        <details class="faq-item">
-          <summary>Can I bundle helicopter + limo + jet?</summary>
-          <div class="faq-content">
-            <p>
-              Yes. Many clients choose bundled itineraries (example: private jet
-              arrival → chauffeured transfer → helicopter experience → yacht
-              departure). Our concierge team designs the schedule so everything
-              flows seamlessly.
-            </p>
-          </div>
-        </details>
+          <details class="faq-item">
+            <summary>Can I bundle helicopter + limo + jet?</summary>
+            <div class="faq-content">
+              <p>
+                Yes. Many clients choose bundled itineraries (example: private
+                jet arrival → chauffeured transfer → helicopter experience →
+                yacht departure). Our concierge team designs the schedule so
+                everything flows seamlessly.
+              </p>
+            </div>
+          </details>
 
-        <details class="faq-item">
-          <summary>Are crews included?</summary>
-          <div class="faq-content">
-            <p>
-              Yes—yachts include a professional crew. Flight crews and
-              chauffeurs are included for aircraft and limousine services
-              through our licensed partners. Specific crew details depend on the
-              selected operator and package.
-            </p>
-          </div>
-        </details>
+          <details class="faq-item">
+            <summary>Are crews included?</summary>
+            <div class="faq-content">
+              <p>
+                Yes—yachts include a professional crew. Flight crews and
+                chauffeurs are included for aircraft and limousine services
+                through our licensed partners. Specific crew details depend on
+                the selected operator and package.
+              </p>
+            </div>
+          </details>
 
-        <details class="faq-item">
-          <summary>Dress code / special requests?</summary>
-          <div class="faq-content">
-            <p>
-              Dress is typically “resort elegant” for dinners and “smart casual”
-              for daytime experiences. We can arrange special requests like
-              flowers, photographers, proposals, dietary needs, custom music,
-              and surprise reveals—just tell us what you want.
-            </p>
-          </div>
-        </details>
+          <details class="faq-item">
+            <summary>Dress code / special requests?</summary>
+            <div class="faq-content">
+              <p>
+                Dress is typically “resort elegant” for dinners and “smart
+                casual” for daytime experiences. We can arrange special requests
+                like flowers, photographers, proposals, dietary needs, custom
+                music, and surprise reveals—just tell us what you want.
+              </p>
+            </div>
+          </details>
 
-        <details class="faq-item">
-          <summary>Weather backup plans?</summary>
-          <div class="faq-content">
-            <p>
-              Safety comes first. If weather impacts your experience, options
-              may include adjusted timing, alternate routes, rescheduling, or
-              operator policies based on conditions. We’ll guide you through the
-              best option for a smooth experience.
-            </p>
-          </div>
-        </details>
-      </div>
+          <details class="faq-item">
+            <summary>Weather backup plans?</summary>
+            <div class="faq-content">
+              <p>
+                Safety comes first. If weather impacts your experience, options
+                may include adjusted timing, alternate routes, rescheduling, or
+                operator policies based on conditions. We’ll guide you through
+                the best option for a smooth experience.
+              </p>
+            </div>
+          </details>
+        </div>
 
-      <div class="faq-cta">
-        <a href="contact.html" class="cta-btn">Ask a Concierge</a>
+        <div class="faq-cta">
+          <a href="contact.html" class="cta-btn">Ask a Concierge</a>
+        </div>
+      </section>
     </div>
+
+    <!-- FOOTER -->
+    <!-- GOLD DIVIDER ABOVE FOOTER -->
+    <div class="lux-divider"></div>
+
+    <!-- AS SEEN IN -->
+    <section class="seen-section">
+      <div class="seen-wrap">
+        <p class="seen-title">As Seen In</p>
+        <div class="seen-logos">
+          <!-- Replace with real logos later (SVG/PNG). These are placeholders. -->
+          <span class="seen-logo">Luxury Weekly</span>
+          <span class="seen-logo">Travel Elite</span>
+          <span class="seen-logo">Ocean & Air</span>
+          <span class="seen-logo">City Luxe</span>
+          <span class="seen-logo">Premier Living</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIFE LUXURY FOOTER -->
+    <footer class="lux-footer">
+      <div class="lux-footer-container">
+        <!-- BRAND -->
+        <div class="lux-footer-col">
+          <h3>Life Luxury</h3>
+          <p>
+            Exclusive yacht, jet, helicopter, and limousine experiences designed
+            for unforgettable moments. Concierge planning. Seamless
+            coordination. White-glove service.
+          </p>
+
+          <!-- SOCIAL ICONS -->
+          <div class="lux-social">
+            <a
+              class="social-btn"
+              href="#"
+              aria-label="Instagram"
+              title="Instagram"
+            >
+              <!-- Instagram icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4a6 6 0 1 1 0 12 6 6 0 0 1 0-12zm0 2a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm6.5-.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0z"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="social-btn"
+              href="#"
+              aria-label="Facebook"
+              title="Facebook"
+            >
+              <!-- Facebook icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.6 1.6-1.6H17V4.8c-.4-.1-1.6-.2-3-.2-2.9 0-4.9 1.8-4.9 5V11H6.6v3H9V22h4.5z"
+                />
+              </svg>
+            </a>
+
+            <a class="social-btn" href="#" aria-label="YouTube" title="YouTube">
+              <!-- YouTube icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M21.6 7.2a3 3 0 0 0-2.1-2.1C17.8 4.6 12 4.6 12 4.6s-5.8 0-7.5.5A3 3 0 0 0 2.4 7.2 31.6 31.6 0 0 0 2 12a31.6 31.6 0 0 0 .4 4.8 3 3 0 0 0 2.1 2.1c1.7.5 7.5.5 7.5.5s5.8 0 7.5-.5a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 22 12a31.6 31.6 0 0 0-.4-4.8zM10 15.5v-7l6 3.5-6 3.5z"
+                />
+              </svg>
+            </a>
+
+            <a class="social-btn" href="#" aria-label="TikTok" title="TikTok">
+              <!-- TikTok icon (simple) -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M14 3v9.2a3.8 3.8 0 1 1-3.2-3.7V6.3a6.2 6.2 0 1 0 5.7 6.2V8.6c1.2 1 2.7 1.6 4.3 1.6V7.6c-2 0-3.8-1.7-3.8-4.6H14z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- EXPLORE -->
+        <div class="lux-footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fleet.html">Fleet</a></li>
+            <li><a href="packages.html">Signature Experiences</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Request a Quote</a></li>
+          </ul>
+        </div>
+
+        <!-- SERVICES -->
+        <div class="lux-footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Luxury Yachts</a></li>
+            <li><a href="#">Private Jets</a></li>
+            <li><a href="#">Helicopters</a></li>
+            <li><a href="#">Limousines</a></li>
+            <li><a href="#">Proposal Packages</a></li>
+          </ul>
+        </div>
+
+        <!-- NEWSLETTER -->
+        <div class="lux-footer-col">
+          <h4>Newsletter</h4>
+          <p class="lux-muted">
+            Get new experiences, seasonal destinations, and VIP offers.
+          </p>
+
+          <form class="lux-newsletter" action="#" method="post">
+            <label class="sr-only" for="newsletterEmail">Email address</label>
+            <input
+              id="newsletterEmail"
+              name="email"
+              type="email"
+              placeholder="Email address"
+              required
+            />
+            <button type="submit">Join</button>
+          </form>
+
+          <p class="lux-legal-note">
+            By subscribing, you agree to receive emails from Life Luxury.
+          </p>
+        </div>
+      </div>
+
+      <!-- LEGAL LINKS + COPYRIGHT -->
+      <div class="lux-footer-bottom">
+        <div class="lux-legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <span class="lux-dot">•</span>
+          <a href="terms.html">Terms</a>
+          <span class="lux-dot">•</span>
+          <a href="cookies.html">Cookies</a>
+          <span class="lux-dot">•</span>
+          <a href="accessibility.html">Accessibility</a>
+        </div>
+
+        <p class="lux-copy">© 2026 Life Luxury. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- FLOATING BUTTONS -->
+    <button
+      class="lux-float lux-chat"
+      id="luxChatBtn"
+      aria-label="Concierge Chat"
+    >
+      Concierge
+    </button>
+
+    <button class="lux-float lux-top" id="backToTop" aria-label="Back to top">
+      ↑
+    </button>
+    <script src="js/hammer-btn.js" defer></script>
+    <script src="JS/pricing.js"></script>
+    <script src="JS/FAQ.js"></script>
+    <script src="JS/footer.js"></script>
   </body>
-  <script src="js/pricing.js"></script>
-  <script src="js/FAQ.js"></script>
 </html>
