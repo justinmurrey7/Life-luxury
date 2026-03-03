@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Private Jet Journeys</title>
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/jet.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <!-- Logo -->
+      <div id="logo">
+        <a href="index.html">
+          <img src="images/life-luxury-logo.png" alt="Life Luxury Logo" />
+        </a>
+      </div>
+
+      <!-- Hamburger -->
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="luxNav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- NAV -->
+      <nav class="lux-nav" id="luxNav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+
+          <li class="has-dropdown" tabindex="0">
+            <a href="#">Fleet ▾</a>
+            <ul class="dropdown">
+              <li><a href="yachts.html">Yachts</a></li>
+              <li><a href="jets.html">Private Jets</a></li>
+              <li><a href="helicopters.html">Helicopters</a></li>
+              <li><a href="limos.html">Limousines</a></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown" tabindex="0">
+            <a href="#">Packages/Pricing ▾</a>
+            <ul class="dropdown">
+              <li><a href="packages.html">Signature Experiences</a></li>
+              <li><a href="proposal.html">Proposal Packages</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+          </li>
+
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="test.html">TESTING PAGE</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA -->
+      <div class="header-cta">
+        <a href="contact.html" class="nav-cta">Request Quote</a>
+      </div>
+    </header>
+    <script src="JS/hammer-BTN.js" defer></script>
+
+    <!--DO NOT DELETE ABOVE -->
+    <!-- =========================
+           HERO
+           ========================= -->
+    <section class="lux-hero jet-hero" id="top">
+      <div class="lux-wrap">
+        <div class="lux-hero-content">
+          <h1>Private Jet Journeys</h1>
+          <p>
+            Skip the crowds, save time, and travel in total comfort with a
+            personalized private jet experience designed around your life.
+          </p>
+
+          <div class="lux-hero-actions">
+            <a class="lux-btn" href="#consultation">Start Your Jet Journey</a>
+            <a class="lux-btn lux-btn-ghost" href="pricing.html"
+              >View Membership</a
+            >
+          </div>
+
+          <div class="lux-trust-row" aria-label="Key benefits">
+            <span class="lux-trust-pill">No airport stress</span>
+            <span class="lux-trust-pill">Flexible schedules</span>
+            <span class="lux-trust-pill">Luxury comfort</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+           QUICK CONSULT STRIP
+           ========================= -->
+    <section class="lux-quick" aria-label="Quick quote strip">
+      <div class="lux-wrap">
+        <form class="lux-quick-form" action="#consultation">
+          <div class="lux-quick-grid">
+            <label class="lux-field">
+              <span class="lux-label">Trip Type</span>
+              <select class="lux-input" name="tripType">
+                <option>Weekend getaway</option>
+                <option>Business travel</option>
+                <option>Family vacation</option>
+                <option>Romantic escape</option>
+                <option>Event / celebration</option>
+                <option>Not sure yet</option>
+              </select>
+            </label>
+
+            <label class="lux-field">
+              <span class="lux-label">Passengers</span>
+              <select class="lux-input" name="passengers">
+                <option>1–2</option>
+                <option>3–4</option>
+                <option>5–6</option>
+                <option>7–8</option>
+                <option>9+</option>
+              </select>
+            </label>
+
+            <label class="lux-field">
+              <span class="lux-label">Timeframe</span>
+              <select class="lux-input" name="timeframe">
+                <option>Next 2 weeks</option>
+                <option>Next month</option>
+                <option>2–3 months</option>
+                <option>Flexible</option>
+              </select>
+            </label>
+
+            <label class="lux-field">
+              <span class="lux-label">Comfort Level</span>
+              <select class="lux-input" name="comfort">
+                <option>Best value</option>
+                <option>Comfortable luxury</option>
+                <option>Go all-out</option>
+              </select>
+            </label>
+
+            <button class="lux-btn" type="submit">Get a Custom Quote</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- =========================
+           FLIP-FLOP #1 (IMAGE LEFT / TEXT RIGHT)
+           ========================= -->
+    <section class="lux-split" aria-label="The Life Luxury Jet Experience">
+      <div class="lux-wrap">
+        <div class="lux-split-grid">
+          <div class="lux-split-media">
+            <img
+              src="images/jet-luxury.png"
+              alt="Luxury private jet lifestyle"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="lux-split-text">
+            <h2>The Life Luxury Jet Experience</h2>
+            <p>
+              Private travel should feel effortless. Our jet journeys are built
+              around freedom, flexibility, and comfort—so you can focus on the
+              experience, not the logistics.
+            </p>
+
+            <ul class="lux-list">
+              <li>Flexible departures and fewer delays</li>
+              <li>Concierge coordination for your itinerary</li>
+              <li>Comfort-first travel that feels elite</li>
+            </ul>
+
+            <a class="lux-btn" href="#consultation">Speak with a Concierge</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+           POPULAR JET JOURNEYS (CARDS)
+           ========================= -->
+    <section class="lux-section" id="journeys">
+      <div class="lux-wrap">
+        <header class="lux-head">
+          <h2>Popular Private Jet Journeys</h2>
+          <p class="lux-sub">
+            Built for speed, convenience, and unforgettable comfort.
+          </p>
+        </header>
+
+        <div class="lux-grid lux-grid-4">
+          <article class="lux-mini-card">
+            <h3>Weekend Escapes</h3>
+            <p>
+              Leave Friday, return Sunday—without losing your weekend to
+              airports.
+            </p>
+          </article>
+
+          <article class="lux-mini-card">
+            <h3>Business Travel</h3>
+            <p>
+              Travel efficiently with privacy, comfort, and a schedule that
+              works for you.
+            </p>
+          </article>
+
+          <article class="lux-mini-card">
+            <h3>Family Vacations</h3>
+            <p>
+              Less stress, more comfort—especially when traveling with kids or
+              groups.
+            </p>
+          </article>
+
+          <article class="lux-mini-card">
+            <h3>Romantic Adventures</h3>
+            <p>
+              Arrive refreshed and ready to celebrate—perfect for surprise
+              trips.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+           FLIP-FLOP #2 (TEXT LEFT / IMAGE RIGHT)
+           ========================= -->
+    <section class="lux-split lux-split-reverse" aria-label="What's included">
+      <div class="lux-wrap">
+        <div class="lux-split-grid">
+          <div class="lux-split-text">
+            <h2>What’s Included</h2>
+            <p>
+              Every journey is custom, but most jet experiences include the
+              essentials that make private travel feel seamless:
+            </p>
+
+            <ul class="lux-list">
+              <li>Private jet charter options based on group size</li>
+              <li>Flexible scheduling and route planning</li>
+              <li>Concierge support for travel coordination</li>
+              <li>Luxury cabin comfort and premium onboard experience</li>
+              <li>Optional catering and VIP add-ons</li>
+            </ul>
+
+            <p class="lux-note">
+              Want something specific? Tell us what “perfect” looks like—we’ll
+              build around it.
+            </p>
+          </div>
+
+          <div class="lux-split-media">
+            <img
+              src="images/Private-jet-inside.png"
+              alt="Luxury private jet cabin interior"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+           GALLERY STRIP
+           ========================= -->
+    <section class="lux-section alt" aria-label="Gallery">
+      <div class="lux-wrap">
+        <header class="lux-head">
+          <h2>A Glimpse On Board</h2>
+          <p class="lux-sub">
+            The feeling of flying private—calm, clean, and comfortable.
+          </p>
+        </header>
+
+        <div class="lux-gallery" role="region" aria-label="Jet photo gallery">
+          <figure class="lux-gallery-item">
+            <img
+              src="images/private-jet-one.png"
+              alt="Jet exterior on runway"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="lux-gallery-item">
+            <img
+              src="images/private-jet-inside.png"
+              alt="Luxury jet seating"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="lux-gallery-item">
+            <img
+              src="images/private-jet-lounge.png"
+              alt="Jet cabin lounge"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="lux-gallery-item">
+            <img
+              src="images/boarding-jet.png"
+              alt="Boarding private jet"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="lux-gallery-item">
+            <img
+              src="images/Luxury-jet-view.png"
+              alt="Private jet window view"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+           DESTINATIONS (Jet-friendly)
+           ========================= -->
+    <section class="lux-section" id="destinations">
+      <div class="lux-wrap">
+        <header class="lux-head">
+          <h2>Destinations</h2>
+          <p class="lux-sub">
+            From city weekends to dream escapes—tell us where you want to land.
+          </p>
+        </header>
+
+        <div class="lux-destinations">
+          <div class="lux-destinations-media">
+            <img
+              src="images/Luxury-jet-view.png"
+              alt="Luxury destination view from private jet travel"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="lux-destinations-text">
+            <div class="lux-chips" role="list" aria-label="Destination ideas">
+              <button class="lux-chip" type="button">Miami</button>
+              <button class="lux-chip" type="button">Las Vegas</button>
+              <button class="lux-chip" type="button">New York</button>
+              <button class="lux-chip" type="button">Los Angeles</button>
+              <button class="lux-chip" type="button">Custom</button>
+            </div>
+
+            <p class="lux-note">
+              Not sure where to go? Tell us your vibe—relax, celebrate,
+              explore—and we’ll suggest options.
+            </p>
+
+            <a class="lux-btn lux-btn-ghost" href="#consultation"
+              >Ask About a Destination</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+           MEMBERSHIP PREVIEW (Upsell)
+           ========================= -->
+    <section class="lux-pricing-preview alt" id="membership">
+      <div class="lux-wrap">
+        <header class="lux-head">
+          <h2>Membership Options</h2>
+          <p class="lux-sub">
+            Get priority access, concierge planning, and exclusive member
+            advantages for private jet journeys.
+          </p>
+        </header>
+
+        <div class="lux-grid lux-grid-2">
+          <!-- CLASSIC -->
+          <article class="lux-card">
+            <div class="lux-card-top">
+              <h3>Classic</h3>
+              <p>Elegant entry for occasional private jet travel.</p>
+            </div>
+
+            <div class="lux-badge">Popular</div>
+
+            <div class="lux-price">
+              <span class="lux-currency">$</span>
+              <span class="lux-amount" data-month="49" data-year="499">49</span>
+              <span class="lux-per" data-month="/mo" data-year="/yr">/mo</span>
+            </div>
+
+            <ul class="lux-list">
+              <li>Priority jet inquiries</li>
+              <li>Concierge coordination</li>
+              <li>Member-only pricing access</li>
+            </ul>
+
+            <a class="lux-btn" href="pricing.html">Select Classic</a>
+          </article>
+
+          <!-- ELITE -->
+          <article class="lux-card lux-elite">
+            <div class="lux-card-top">
+              <h3>Elite</h3>
+              <p>VIP access with upgrades and peak-date preference.</p>
+            </div>
+
+            <div class="lux-badge">Most Popular</div>
+
+            <div class="lux-price">
+              <span class="lux-currency">$</span>
+              <span class="lux-amount" data-month="129" data-year="1299"
+                >129</span
+              >
+              <span class="lux-per" data-month="/mo" data-year="/yr">/mo</span>
+            </div>
+
+            <ul class="lux-list">
+              <li>VIP priority booking</li>
+              <li>Dedicated concierge support</li>
+              <li>Exclusive upgrades when available</li>
+              <li>Preferred peak-date access</li>
+            </ul>
+
+            <a class="lux-btn" href="pricing.html">Select Elite</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+           REVIEWS / SOCIAL PROOF
+           ========================= -->
+    <section class="lux-section" id="reviews">
+      <div class="lux-wrap">
+        <header class="lux-head">
+          <h2>Guest Reviews</h2>
+          <p class="lux-sub">
+            Comfort, convenience, and the feeling of flying first-class—every
+            time.
+          </p>
+        </header>
+
+        <div class="lux-grid lux-grid-3">
+          <article class="lux-quote">
+            <p class="lux-stars" aria-label="5 out of 5 stars">★★★★★</p>
+            <p>
+              “The concierge handled everything. We showed up, flew out, and
+              actually enjoyed travel for once.”
+            </p>
+            <p class="lux-quote-by">— Client, Weekend Escape</p>
+          </article>
+
+          <article class="lux-quote">
+            <p class="lux-stars" aria-label="5 out of 5 stars">★★★★★</p>
+            <p>
+              “Business travel became painless. It saved time and felt genuinely
+              premium.”
+            </p>
+            <p class="lux-quote-by">— Client, Executive Trip</p>
+          </article>
+
+          <article class="lux-quote">
+            <p class="lux-stars" aria-label="5 out of 5 stars">★★★★★</p>
+            <p>
+              “Elite was worth it. We got preferred options and upgrades we
+              didn’t expect.”
+            </p>
+            <p class="lux-quote-by">— Client, Family Vacation</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+           FAQ
+           ========================= -->
+    <section class="lux-section alt" id="faq">
+      <div class="lux-wrap">
+        <header class="lux-head">
+          <h2>Private Jet FAQ</h2>
+          <p class="lux-sub">Quick answers so you can book with confidence.</p>
+        </header>
+
+        <div class="lux-faq">
+          <details class="lux-faq-item">
+            <summary>How does pricing work?</summary>
+            <p>
+              Membership gives you priority access and concierge planning. Final
+              quotes depend on route, aircraft size, passenger count, and
+              timing.
+            </p>
+          </details>
+
+          <details class="lux-faq-item">
+            <summary>How far in advance should I book?</summary>
+            <p>
+              Peak travel windows book quickly. If possible, plan 2–6 weeks
+              ahead. For time-sensitive trips, we’ll do our best to find options
+              fast.
+            </p>
+          </details>
+
+          <details class="lux-faq-item">
+            <summary>Can you help with ground transportation?</summary>
+            <p>
+              Yes—your concierge can coordinate luxury ground transportation and
+              timing for a seamless experience.
+            </p>
+          </details>
+
+          <details class="lux-faq-item">
+            <summary>Is it beginner-friendly?</summary>
+            <p>
+              Absolutely. If you’ve never flown private, we’ll guide you through
+              every step.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+           FINAL CTA
+           ========================= -->
+    <section id="consultation" class="lux-cta">
+      <div class="lux-wrap">
+        <h2>Design Your Private Jet Journey</h2>
+        <p>
+          Tell us your destination, dates, and travel style. A Life Luxury
+          concierge will reach out with tailored options and next steps.
+        </p>
+
+        <div class="lux-cta-actions">
+          <a class="lux-btn" href="contact.html">Schedule Consultation</a>
+          <a class="lux-btn lux-btn-ghost" href="pricing.html"
+            >Compare Membership</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         FOOTER (use your existing footer)
+         ========================= -->
+
+    <script src="JS/private-jet.js"></script>
+  </body>
+</html>
