@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Helicopter Journeys</title>
+    <link rel="stylesheet" href="CSS/helicopter.css" />
+    <link rel="stylesheet" href="CSS/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <!-- Logo -->
+      <div id="logo">
+        <a href="index.html">
+          <img src="images/life-luxury-logo.png" alt="Life Luxury Logo" />
+        </a>
+      </div>
+
+      <!-- Hamburger -->
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="luxNav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- NAV -->
+      <nav class="lux-nav" id="luxNav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+
+          <li class="has-dropdown" tabindex="0">
+            <a href="#">Fleet ▾</a>
+            <ul class="dropdown">
+              <li><a href="yachts.html">Yachts</a></li>
+              <li><a href="jets.html">Private Jets</a></li>
+              <li><a href="helicopters.html">Helicopters</a></li>
+              <li><a href="limos.html">Limousines</a></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown" tabindex="0">
+            <a href="#">Packages/Pricing ▾</a>
+            <ul class="dropdown">
+              <li><a href="packages.html">Signature Experiences</a></li>
+              <li><a href="proposal.html">Proposal Packages</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+          </li>
+
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="test.html">TESTING PAGE</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA -->
+      <div class="header-cta">
+        <a href="contact.html" class="nav-cta">Request Quote</a>
+      </div>
+    </header>
+    <!-- Main Content -->
+    <!-- HERO -->
+    <section class="lux-hero helicopter-hero" id="top">
+      <div class="lux-wrap">
+        <div class="lux-hero-content">
+          <h1>Helicopter Journeys</h1>
+          <p>
+            From skyline flights to destination drop-offs, experience luxury
+            from above with curated helicopter journeys built around your
+            schedule.
+          </p>
+
+          <div class="lux-hero-actions">
+            <a class="lux-btn" href="#consultation"
+              >Plan a Helicopter Journey</a
+            >
+            <a class="lux-btn lux-btn-ghost" href="pricing.html"
+              >View Membership</a
+            >
+          </div>
+
+          <div class="lux-trust-row" aria-label="Key benefits">
+            <span class="lux-trust-pill">Scenic routes</span>
+            <span class="lux-trust-pill">Time-saving</span>
+            <span class="lux-trust-pill">VIP arrival</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK STRIP -->
+    <section class="lux-quick" aria-label="Quick quote strip">
+      <div class="lux-wrap">
+        <form class="lux-quick-form" action="#consultation">
+          <div class="lux-quick-grid">
+            <label class="lux-field">
+              <span class="lux-label">Journey Type</span>
+              <select class="lux-input" name="journeyType">
+                <option>City skyline tour</option>
+                <option>Romantic sunset flight</option>
+                <option>Event arrival</option>
+                <option>Destination transfer</option>
+                <option>Custom</option>
+              </select>
+            </label>
+
+            <label class="lux-field">
+              <span class="lux-label">Guests</span>
+              <select class="lux-input" name="guests">
+                <option>1–2</option>
+                <option>3–4</option>
+                <option>5–6</option>
+                <option>Group / multiple flights</option>
+              </select>
+            </label>
+
+            <label class="lux-field">
+              <span class="lux-label">Timeframe</span>
+              <select class="lux-input" name="timeframe">
+                <option>Next 2 weeks</option>
+                <option>Next month</option>
+                <option>2–3 months</option>
+                <option>Flexible</option>
+              </select>
+            </label>
+
+            <label class="lux-field">
+              <span class="lux-label">Vibe</span>
+              <select class="lux-input" name="vibe">
+                <option>Relax + scenic</option>
+                <option>Luxury + celebration</option>
+                <option>Fast + efficient</option>
+              </select>
+            </label>
+
+            <button class="lux-btn" type="submit">Get Options</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- SPLIT #1 -->
+    <section class="lux-split" aria-label="Helicopter experience">
+      <div class="lux-wrap">
+        <div class="lux-split-grid">
+          <div class="lux-split-media">
+            <img
+              src="images/luxury-helicopter-lifestyle.png"
+              alt="Luxury helicopter lifestyle"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="lux-split-text">
+            <h2>The Life Luxury Helicopter Experience</h2>
+            <p>
+              Helicopter journeys are about perspective—views you can’t get
+              anywhere else, and arrivals that feel unforgettable. We coordinate
+              the details so you can enjoy the moment.
+            </p>
+
+            <ul class="lux-list">
+              <li>Curated routes and VIP timing</li>
+              <li>Concierge planning for destination + arrival</li>
+              <li>Perfect for surprises, celebrations, and efficiency</li>
+            </ul>
+
+            <a class="lux-btn" href="#consultation">Talk to Concierge</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POPULAR JOURNEYS -->
+    <section class="lux-section" id="journeys">
+      <div class="lux-wrap">
+        <header class="lux-head">
+          <h2>Popular Helicopter Journeys</h2>
+          <p class="lux-sub">
+            Experiences designed for wow-factor and convenience.
+          </p>
+        </header>
+
+        <div class="lux-grid lux-grid-4">
+          <article class="lux-mini-card">
+            <h3>Skyline Tours</h3>
+            <p>
+              See the city from above—perfect for first-timers and visitors.
+            </p>
+          </article>
+
+          <article class="lux-mini-card">
+            <h3>Sunset Romance</h3>
+            <p>Golden hour views with a private, unforgettable vibe.</p>
+          </article>
+
+          <article class="lux-mini-card">
+            <h3>Event Arrival</h3>
+            <p>Show up in style—weddings, concerts, and special occasions.</p>
+          </article>
+
+          <article class="lux-mini-card">
+            <h3>Destination Transfer</h3>
+            <p>Save time with direct drop-offs when available.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPLIT #2 -->
+    <section class="lux-split lux-split-reverse" aria-label="What's included">
+      <div class="lux-wrap">
+        <div class="lux-split-grid">
+          <div class="lux-split-text">
+            <h2>What’s Included</h2>
+            <p>Every journey is customized, but most include:</p>
+
+            <ul class="lux-list">
+              <li>Route planning + timing coordination</li>
+              <li>Pickup/landing logistics support</li>
+              <li>Concierge help for special requests</li>
+              <li>Optional luxury add-ons and itinerary pairing</li>
+            </ul>
+
+            <p class="lux-note">
+              Tell us your goal—romantic, scenic, or efficient—and we’ll build
+              around it.
+            </p>
+          </div>
+
+          <div class="lux-split-media">
+            <img
+              src="images/helicopter-cabin.png"
+              alt="Helicopter cabin interior"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="lux-section alt" aria-label="Gallery">
+      <div class="lux-wrap">
+        <header class="lux-head">
+          <h2>Moments From Above</h2>
+          <p class="lux-sub">
+            A quick look at the experience you’re stepping into.
+          </p>
+        </header>
+
+        <div
+          class="lux-gallery"
+          role="region"
+          aria-label="Helicopter photo gallery"
+        >
+          <figure class="lux-gallery-item">
+            <img
+              src="images/helicopter-on-helopad.png"
+              alt="Helicopter at helipad"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="lux-gallery-item">
+            <img
+              src="images/heli-gallery-2.jpg"
+              alt="Helicopter over city skyline"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="lux-gallery-item">
+            <img
+              src="images/heli-gallery-3.jpg"
+              alt="Luxury helicopter cabin seating"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="lux-gallery-item">
+            <img
+              src="images/heli-gallery-4.jpg"
+              alt="Couple arriving by helicopter"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="lux-gallery-item">
+            <img
+              src="images/heli-gallery-5.jpg"
+              alt="Scenic coastline helicopter view"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTINATIONS -->
+    <section class="lux-section" id="destinations">
+      <div class="lux-wrap">
+        <header class="lux-head">
+          <h2>Destinations</h2>
+          <p class="lux-sub">
+            Pair your flight with a yacht day, dinner reservation, or weekend
+            escape.
+          </p>
+        </header>
+
+        <div class="lux-destinations">
+          <div class="lux-destinations-media">
+            <img
+              src="images/heli-destination.jpg"
+              alt="Luxury destination from helicopter travel"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="lux-destinations-text">
+            <div class="lux-chips" role="list" aria-label="Destination ideas">
+              <button class="lux-chip" type="button">City Skyline</button>
+              <button class="lux-chip" type="button">Coastline</button>
+              <button class="lux-chip" type="button">Wine Country</button>
+              <button class="lux-chip" type="button">Resort Transfer</button>
+              <button class="lux-chip" type="button">Custom</button>
+            </div>
+
+            <p class="lux-note">
+              Not sure where to fly? Tell us your vibe and we’ll suggest routes.
+            </p>
+
+            <a class="lux-btn lux-btn-ghost" href="#consultation"
+              >Ask About Routes</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEMBERSHIP PREVIEW -->
+    <section class="lux-pricing-preview alt" id="membership">
+      <div class="lux-wrap">
+        <header class="lux-head">
+          <h2>Membership Options</h2>
+          <p class="lux-sub">
+            Priority access, concierge planning, and member-only advantages for
+            helicopter journeys.
+          </p>
+        </header>
+
+        <div class="lux-grid lux-grid-2">
+          <article class="lux-card">
+            <div class="lux-card-top">
+              <h3>Classic</h3>
+              <p>Elegant entry plan for occasional helicopter journeys.</p>
+            </div>
+
+            <div class="lux-badge">Popular</div>
+
+            <div class="lux-price">
+              <span class="lux-currency">$</span>
+              <span class="lux-amount" data-month="39" data-year="399">39</span>
+              <span class="lux-per" data-month="/mo" data-year="/yr">/mo</span>
+            </div>
+
+            <ul class="lux-list">
+              <li>Priority flight inquiries</li>
+              <li>Concierge planning</li>
+              <li>Member-only offers</li>
+            </ul>
+
+            <a class="lux-btn" href="pricing.html">Select Classic</a>
+          </article>
+
+          <article class="lux-card lux-elite">
+            <div class="lux-card-top">
+              <h3>Elite</h3>
+              <p>VIP coordination, preferred timing, and premium add-ons.</p>
+            </div>
+
+            <div class="lux-badge">Most Popular</div>
+
+            <div class="lux-price">
+              <span class="lux-currency">$</span>
+              <span class="lux-amount" data-month="99" data-year="999">99</span>
+              <span class="lux-per" data-month="/mo" data-year="/yr">/mo</span>
+            </div>
+
+            <ul class="lux-list">
+              <li>VIP booking priority</li>
+              <li>Dedicated concierge</li>
+              <li>Preferred peak-date access</li>
+              <li>Exclusive upgrades when available</li>
+            </ul>
+
+            <a class="lux-btn" href="pricing.html">Select Elite</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="lux-section" id="reviews">
+      <div class="lux-wrap">
+        <header class="lux-head">
+          <h2>Guest Reviews</h2>
+          <p class="lux-sub">Pure wow-factor with effortless planning.</p>
+        </header>
+
+        <div class="lux-grid lux-grid-3">
+          <article class="lux-quote">
+            <p class="lux-stars" aria-label="5 out of 5 stars">★★★★★</p>
+            <p>
+              “The skyline at sunset was unreal. Concierge made it effortless.”
+            </p>
+            <p class="lux-quote-by">— Client, Skyline Tour</p>
+          </article>
+
+          <article class="lux-quote">
+            <p class="lux-stars" aria-label="5 out of 5 stars">★★★★★</p>
+            <p>“Arriving like that made the entire event feel next-level.”</p>
+            <p class="lux-quote-by">— Client, Event Arrival</p>
+          </article>
+
+          <article class="lux-quote">
+            <p class="lux-stars" aria-label="5 out of 5 stars">★★★★★</p>
+            <p>
+              “Elite membership is the move. Preferred times and upgrades were
+              clutch.”
+            </p>
+            <p class="lux-quote-by">— Client, Weekend Escape</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="lux-section alt" id="faq">
+      <div class="lux-wrap">
+        <header class="lux-head">
+          <h2>Helicopter FAQ</h2>
+          <p class="lux-sub">Fast answers to book with confidence.</p>
+        </header>
+
+        <div class="lux-faq">
+          <details class="lux-faq-item">
+            <summary>How long are helicopter journeys?</summary>
+            <p>
+              Journeys vary—from short scenic flights to longer transfers. We’ll
+              tailor it to your goal and schedule.
+            </p>
+          </details>
+
+          <details class="lux-faq-item">
+            <summary>Is it safe for first-time flyers?</summary>
+            <p>
+              Yes. We guide you through arrival, boarding, comfort, and
+              expectations so it feels smooth.
+            </p>
+          </details>
+
+          <details class="lux-faq-item">
+            <summary>Can you pair this with dinner or an event?</summary>
+            <p>
+              Absolutely—concierge can coordinate timing and pairing for a full
+              luxury itinerary.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section id="consultation" class="lux-cta">
+      <div class="lux-wrap">
+        <h2>Design Your Helicopter Journey</h2>
+        <p>
+          Tell us your timeframe and vibe. We’ll send options and next steps.
+        </p>
+
+        <div class="lux-cta-actions">
+          <a class="lux-btn" href="contact.html">Schedule Consultation</a>
+          <a class="lux-btn lux-btn-ghost" href="pricing.html"
+            >Compare Membership</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="lux-footer">
+      <div class="lux-footer-container">
+        <div>
+          <h3>Life Luxury</h3>
+          <p>
+            Premium experiences across yachts, private jets, helicopters, and
+            limousines—made accessible through curated membership journeys.
+          </p>
+        </div>
+
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="yacht.html">Yacht</a></li>
+            <li><a href="jet.html">Private Jet</a></li>
+            <li><a href="helicopter.html">Helicopter</a></li>
+            <li><a href="limousine.html">Limousine</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="pricing.html">Membership</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Newsletter</h4>
+          <p class="lux-muted">Get exclusive offers and luxury inspiration.</p>
+          <form class="lux-newsletter">
+            <input
+              type="email"
+              placeholder="Email address"
+              aria-label="Email address"
+            />
+            <button type="submit">Join</button>
+          </form>
+          <p class="lux-legal-note">No spam. Unsubscribe anytime.</p>
+        </div>
+      </div>
+
+      <div class="lux-footer-bottom">
+        <div class="lux-legal-links">
+          <a href="privacy.html">Privacy</a>
+          <span class="lux-dot">•</span>
+          <a href="terms.html">Terms</a>
+        </div>
+        <p class="lux-copy">
+          © <span id="year"></span> Life Luxury. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="JS/helicopter.js"></script>
+  </body>
+</html>
