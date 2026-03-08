@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>packages page</title>
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/package-price.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <!-- Logo -->
+      <div id="logo">
+        <a href="index.html">
+          <img src="images/life-luxury-logo.png" alt="Life Luxury Logo" />
+        </a>
+      </div>
+
+      <!-- Hamburger -->
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="luxNav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- NAV -->
+      <nav class="lux-nav" id="luxNav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+
+          <li class="has-dropdown" tabindex="0">
+            <a href="#">Fleet ▾</a>
+            <ul class="dropdown">
+              <li><a href="yachts.html">Yachts</a></li>
+              <li><a href="jets.html">Private Jets</a></li>
+              <li><a href="helicopters.html">Helicopters</a></li>
+              <li><a href="limos.html">Limousines</a></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown" tabindex="0">
+            <a href="#">Packages/Pricing ▾</a>
+            <ul class="dropdown">
+              <li><a href="packages.html">Signature Experiences</a></li>
+              <li><a href="proposal.html">Proposal Packages</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+          </li>
+
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="test.html">TESTING PAGE</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA -->
+      <div class="header-cta">
+        <a href="contact.html" class="nav-cta">Request Quote</a>
+      </div>
+    </header>
+    
+    <!-- HERO -->
+    <section class="ll-hero-slider" aria-label="Life Luxury hero slider">
+      <div class="ll-slides">
+        <!-- Slide 1 -->
+        <article class="ll-slide active">
+          <img
+            src="image-hero/"
+            alt="Luxury helicopter, yacht, and limousine at sunset"
+            class="ll-slide-bg"
+          />
+          <div class="ll-slide-overlay"></div>
+
+          <div class="ll-slide-content">
+            <p class="ll-slide-eyebrow">Life Luxury Membership</p>
+            <h1 class="ll-slide-title">
+              Experience Life
+              <span>Without Limits</span>
+            </h1>
+            <p class="ll-slide-text">
+              Discover a refined world of private helicopters, yachts,
+              limousines, and elite concierge travel designed around your
+              lifestyle.
+            </p>
+            <div class="ll-slide-buttons">
+              <a href="#pricing" class="ll-btn ll-btn-outline">View Packages</a>
+              <a href="#concierge" class="ll-btn ll-btn-gold"
+                >Speak With Concierge</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 2 -->
+        <article class="ll-slide">
+          <img
+            src="images/life-luxury-hero-2.jpg"
+            alt="Couple enjoying a luxury yacht experience at sunset"
+            class="ll-slide-bg"
+          />
+          <div class="ll-slide-overlay"></div>
+
+          <div class="ll-slide-content">
+            <p class="ll-slide-eyebrow">Luxury On The Water</p>
+            <h2 class="ll-slide-title">
+              Private Yachts.
+              <span>Unforgettable Evenings.</span>
+            </h2>
+            <p class="ll-slide-text">
+              Step into elegant charter experiences with sunset dining, premium
+              service, and unforgettable coastal escapes.
+            </p>
+            <div class="ll-slide-buttons">
+              <a href="#yachts" class="ll-btn ll-btn-outline">Explore Yachts</a>
+              <a href="#pricing" class="ll-btn ll-btn-gold">See Memberships</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 3 -->
+        <article class="ll-slide">
+          <img
+            src="images/life-luxury-hero-3.jpg"
+            alt="Luxury Bell 206 helicopter with scenic destination view"
+            class="ll-slide-bg"
+          />
+          <div class="ll-slide-overlay"></div>
+
+          <div class="ll-slide-content">
+            <p class="ll-slide-eyebrow">Luxury In The Air</p>
+            <h2 class="ll-slide-title">
+              Helicopter Access
+              <span>With A Grand Arrival</span>
+            </h2>
+            <p class="ll-slide-text">
+              From scenic coastal transfers to exclusive destination arrivals,
+              every flight is crafted to feel effortless and elevated.
+            </p>
+            <div class="ll-slide-buttons">
+              <a href="#helicopters" class="ll-btn ll-btn-outline"
+                >Explore Helicopters</a
+              >
+              <a href="#concierge" class="ll-btn ll-btn-gold"
+                >Plan Your Journey</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 4 -->
+        <article class="ll-slide">
+          <img
+            src="images/life-luxury-hero-4.jpg"
+            alt="Luxury limousine arrival with chauffeur and elegant couple"
+            class="ll-slide-bg"
+          />
+          <div class="ll-slide-overlay"></div>
+
+          <div class="ll-slide-content">
+            <p class="ll-slide-eyebrow">Luxury On The Ground</p>
+            <h2 class="ll-slide-title">
+              Chauffeured Luxury
+              <span>For Every Occasion</span>
+            </h2>
+            <p class="ll-slide-text">
+              Enjoy polished, premium transportation for date nights, events,
+              celebrations, and seamless luxury travel connections.
+            </p>
+            <div class="ll-slide-buttons">
+              <a href="#limos" class="ll-btn ll-btn-outline">Explore Limos</a>
+              <a href="#pricing" class="ll-btn ll-btn-gold">Choose A Package</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Controls -->
+      <button
+        class="ll-arrow ll-prev"
+        type="button"
+        aria-label="Previous slide"
+      >
+        &#10094;
+      </button>
+      <button class="ll-arrow ll-next" type="button" aria-label="Next slide">
+        &#10095;
+      </button>
+
+      <!-- Dots -->
+      <div class="ll-dots" aria-label="Hero slider navigation">
+        <button
+          class="ll-dot active"
+          type="button"
+          aria-label="Go to slide 1"
+        ></button>
+        <button
+          class="ll-dot"
+          type="button"
+          aria-label="Go to slide 2"
+        ></button>
+        <button
+          class="ll-dot"
+          type="button"
+          aria-label="Go to slide 3"
+        ></button>
+        <button
+          class="ll-dot"
+          type="button"
+          aria-label="Go to slide 4"
+        ></button>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="intro">
+      <div class="container">
+        <p class="section-tag">Life Luxury Membership</p>
+        <h2>Luxury Travel, Reimagined for Real Access</h2>
+        <p>
+          Life Luxury brings together unforgettable moments across air, sea, and
+          ground. Choose the membership that fits your lifestyle and enjoy
+          elegant travel with premium service, curated destinations, and
+          personal concierge support.
+        </p>
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="category-strip">
+      <div class="container">
+        <div class="category-grid">
+          <a href="#yachts" class="category-item">
+            <span>🛥</span>
+            <h3>Yachts</h3>
+          </a>
+          <a href="#jets" class="category-item">
+            <span>✈</span>
+            <h3>Private Jets</h3>
+          </a>
+          <a href="#helicopters" class="category-item">
+            <span>🚁</span>
+            <h3>Helicopters</h3>
+          </a>
+          <a href="#limos" class="category-item">
+            <span>🚘</span>
+            <h3>Limousines</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing-section" id="pricing">
+      <div class="container">
+        <div class="pricing-header">
+          <p class="section-tag">Choose Your Membership</p>
+          <h2 class="section-title">Curated Packages for Elevated Travel</h2>
+          <p class="section-subtitle">
+            Each package is designed to offer a seamless luxury lifestyle
+            experience, from elegant local arrivals to unforgettable global
+            escapes.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- CLASSIC -->
+          <article class="pricing-card">
+            <span class="pricing-badge">Classic</span>
+            <h3>Classic</h3>
+            <div class="price">$4,995 <small>/ month</small></div>
+            <p class="plan-desc">
+              A refined entry into the Life Luxury experience.
+            </p>
+            <ul class="pricing-list">
+              <li>Luxury yacht access</li>
+              <li>Chauffeur limousine service</li>
+              <li>Concierge trip planning</li>
+              <li>Fine dining experiences</li>
+              <li>Curated local luxury escapes</li>
+            </ul>
+            <a
+              href="#"
+              class="btn btn-secondary"
+              style="background: var(--navy); border-color: var(--navy)"
+              >Book Experience</a
+            >
+          </article>
+
+          <!-- SIGNATURE -->
+          <article class="pricing-card featured">
+            <span class="pricing-badge">Most Popular</span>
+            <h3>Signature</h3>
+            <div class="price">$9,995 <small>/ month</small></div>
+            <p class="plan-desc">
+              Expanded access for members who want premium variety and private
+              travel.
+            </p>
+            <ul class="pricing-list">
+              <li>Everything in Classic</li>
+              <li>Private jet access</li>
+              <li>Helicopter transfers</li>
+              <li>VIP concierge service</li>
+              <li>Exclusive yacht destinations</li>
+              <li>Luxury event arrivals</li>
+            </ul>
+            <a href="#" class="btn btn-primary">Book Experience</a>
+          </article>
+
+          <!-- ELITE -->
+          <article class="pricing-card">
+            <span class="pricing-badge">Elite</span>
+            <h3>Elite</h3>
+            <div class="price">Custom <small>pricing</small></div>
+            <p class="plan-desc">
+              Tailored for clients seeking an exceptional all-access luxury
+              lifestyle.
+            </p>
+            <ul class="pricing-list">
+              <li>Unlimited luxury travel planning</li>
+              <li>Global private jet options</li>
+              <li>Mega yacht charters</li>
+              <li>Helicopter island transfers</li>
+              <li>Luxury chauffeur service</li>
+              <li>Dedicated personal concierge</li>
+            </ul>
+            <a
+              href="#"
+              class="btn btn-secondary"
+              style="background: var(--navy); border-color: var(--navy)"
+              >Request Consultation</a
+            >
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE PREVIEWS -->
+    <section class="experience-section">
+      <div class="container">
+        <div class="experience-header">
+          <p class="section-tag">Packages Preview</p>
+          <h2 class="section-title">Luxury Across Every Journey</h2>
+          <p class="section-subtitle">
+            Explore the signature experiences that define Life Luxury.
+          </p>
+        </div>
+
+        <div class="experience-grid">
+          <article class="experience-card" id="yachts">
+            <img src="images/luxury-yacht.jpg" alt="Luxury yacht experience" />
+            <div class="experience-body">
+              <h3>Yacht Experience</h3>
+              <p>
+                Sunset cruises, island hopping, chef-prepared dining, and
+                unforgettable water views.
+              </p>
+              <a href="#" class="mini-btn">Explore Yachts</a>
+            </div>
+          </article>
+
+          <article class="experience-card" id="jets">
+            <img
+              src="images/private-jet-interior.jpg"
+              alt="Private jet experience"
+            />
+            <div class="experience-body">
+              <h3>Private Jet Experience</h3>
+              <p>
+                Fly in quiet comfort with spacious seating, privacy, and elite
+                personalized service.
+              </p>
+              <a href="#" class="mini-btn">Explore Jets</a>
+            </div>
+          </article>
+
+          <article class="experience-card" id="helicopters">
+            <img
+              src="images/helicopter-experience.jpg"
+              alt="Helicopter experience"
+            />
+            <div class="experience-body">
+              <h3>Helicopter Experience</h3>
+              <p>
+                Scenic transfers, exclusive destinations, and breathtaking
+                arrivals from above.
+              </p>
+              <a href="#" class="mini-btn">Explore Helicopters</a>
+            </div>
+          </article>
+
+          <article class="experience-card" id="limos">
+            <img
+              src="images/luxury-limousine.jpg"
+              alt="Luxury limousine experience"
+            />
+            <div class="experience-body">
+              <h3>Limousine Experience</h3>
+              <p>
+                Elegant chauffeur-driven transportation for date nights, events,
+                and VIP arrivals.
+              </p>
+              <a href="#" class="mini-btn">Explore Limos</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPARISON TABLE -->
+    <section class="comparison-section">
+      <div class="container">
+        <div class="comparison-header">
+          <p class="section-tag">Compare Packages</p>
+          <h2 class="section-title">Find the Right Level of Luxury</h2>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Classic</th>
+                <th>Signature</th>
+                <th>Elite</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Yacht Access</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+              </tr>
+              <tr>
+                <td>Private Jet Access</td>
+                <td>—</td>
+                <td>✓</td>
+                <td>✓</td>
+              </tr>
+              <tr>
+                <td>Helicopter Transfers</td>
+                <td>—</td>
+                <td>✓</td>
+                <td>✓</td>
+              </tr>
+              <tr>
+                <td>Luxury Limousine Service</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+              </tr>
+              <tr>
+                <td>Concierge Support</td>
+                <td>✓</td>
+                <td>VIP</td>
+                <td>Dedicated</td>
+              </tr>
+              <tr>
+                <td>Custom Itinerary Design</td>
+                <td>Basic</td>
+                <td>Premium</td>
+                <td>Fully Tailored</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta" id="concierge">
+      <div class="container">
+        <p class="section-tag" style="color: #f0cf8d">Begin Your Journey</p>
+        <h2>Begin Your Life Luxury Experience</h2>
+        <p>
+          Speak with our concierge team to create a custom luxury travel plan
+          designed around your lifestyle, your schedule, and your destination
+          dreams.
+        </p>
+        <div class="cta-buttons">
+          <a href="#" class="btn btn-primary">Schedule Consultation</a>
+          <a href="#" class="btn btn-secondary">View Destinations</a>
+        </div>
+      </div>
+    </section>
+    <script src="JS/packages-hero.js"></script>
+  </body>
+</html>
