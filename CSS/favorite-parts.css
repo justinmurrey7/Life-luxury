@@ -1,41 +1,7 @@
-:root {
-  --navy: #0d1b3d;
-  --navy-deep: #08122b;
-  --gold: #d9b56d;
-  --gold-dark: #b99449;
-  --ivory: #f8f5ef;
-  --white: #ffffff;
-  --text: #1f2430;
-  --soft-border: rgba(13, 27, 61, 0.12);
-  --shadow: 0 12px 30px rgba(8, 18, 43, 0.12);
-  --radius: 20px;
-  --container: 1240px;
-}
-
-body {
-  font-family: Georgia, "Times New Roman", serif;
-  background: var(--ivory);
-  color: var(--text);
-  line-height: 1.6;
-}
-
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-a {
-  text-decoration: none;
-}
-
-.container {
-  width: min(92%, var(--container));
-  margin: 0 auto;
-}
 
 /* HERO */
 .ll-hero-slider {
+  margin-top: 20px;
   position: relative;
   width: 100%;
   height: 1100px;
@@ -494,112 +460,205 @@ a {
 }
 
 /* PRICING */
-.pricing-section {
-  padding: 30px 0 90px;
+.lux-billing-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin: 30px 0 40px;
 }
 
-.pricing-header {
-  text-align: center;
-  margin-bottom: 45px;
-}
-
-.pricing-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-  align-items: stretch;
-}
-
-.pricing-card {
-  position: relative;
-  background: var(--white);
-  border: 1px solid var(--soft-border);
-  border-radius: 24px;
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  padding: 36px 30px;
-}
-
-.pricing-card.featured {
-  background: linear-gradient(180deg, var(--navy) 0%, var(--navy-deep) 100%);
-  color: var(--white);
-  border: 1px solid rgba(217, 181, 109, 0.5);
-  transform: scale(1.03);
-}
-
-.pricing-badge {
-  display: inline-block;
-  margin-bottom: 18px;
-  padding: 7px 14px;
-  border-radius: 999px;
-  background: rgba(217, 181, 109, 0.14);
-  color: var(--gold);
+.lux-billing-label {
   font-size: 0.82rem;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #caa25a;
+}
+
+.lux-billing-toggle {
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  min-width: 360px;
+  padding: 6px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #0b1f4d 0%, #122e70 100%);
+  box-shadow:
+    0 18px 40px rgba(7, 21, 50, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.lux-billing-option {
+  position: relative;
+  z-index: 2;
+  border: 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.96rem;
+  font-weight: 700;
+  padding: 14px 24px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.lux-billing-option.active {
+  color: #081736;
+}
+
+.lux-toggle-pill {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: calc((100% - 12px) / 3);
+  height: calc(100% - 12px);
+  border-radius: 999px;
+  background: linear-gradient(135deg, #d8b36a 0%, #f0dfb6 100%);
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.38);
+  transition: transform 0.35s ease;
+}
+
+.lux-billing-toggle[data-active="daily"] .lux-toggle-pill {
+  transform: translateX(0%);
+}
+
+.lux-billing-toggle[data-active="weekly"] .lux-toggle-pill {
+  transform: translateX(100%);
+}
+
+.lux-billing-toggle[data-active="monthly"] .lux-toggle-pill {
+  transform: translateX(200%);
+}
+
+/* SAMPLE CARD STYLING */
+.lux-price-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.lux-price-card {
+  padding: 34px 28px;
+  border-radius: 24px;
+  background: #ffffff;
+  border: 1px solid rgba(216, 179, 106, 0.2);
+  box-shadow: 0 15px 35px rgba(7, 21, 50, 0.08);
+}
+
+.lux-price-card.featured {
+  background: linear-gradient(180deg, #0c2254 0%, #081736 100%);
+  border-color: rgba(216, 179, 106, 0.55);
+}
+
+.lux-price-badge {
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(216, 179, 106, 0.12);
+  color: #c89f50;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1.4px;
   text-transform: uppercase;
 }
 
-.featured .pricing-badge {
+.lux-price-card.featured .lux-price-badge {
   background: rgba(255, 255, 255, 0.08);
-  color: #f1d59a;
+  color: #f0d38f;
 }
 
-.pricing-card h3 {
+.lux-price-card h3 {
+  margin: 0 0 14px;
+  font-family: Georgia, "Times New Roman", serif;
   font-size: 2rem;
-  margin-bottom: 8px;
-  color: inherit;
+  color: #0b1f4d;
 }
 
-.pricing-card .price {
-  font-size: 2.25rem;
+.lux-price-card.featured h3 {
+  color: #fff;
+}
+
+.lux-price {
+  margin-bottom: 14px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.1rem;
   font-weight: 700;
-  line-height: 1.1;
-  margin: 20px 0 8px;
-  color: inherit;
+  color: #0b1f4d;
 }
 
-.pricing-card .price small {
+.lux-price-card.featured .lux-price {
+  color: #fff;
+}
+
+.lux-price-period {
   font-size: 0.95rem;
-  opacity: 0.75;
-  font-weight: 400;
+  color: #66728d;
 }
 
-.pricing-card .plan-desc {
-  color: inherit;
-  opacity: 0.82;
-  margin-bottom: 24px;
+.lux-price-card.featured .lux-price-period {
+  color: rgba(255, 255, 255, 0.8);
 }
 
-.pricing-list {
-  list-style: none;
-  margin: 22px 0 30px;
-  display: grid;
-  gap: 14px;
+.lux-custom-text {
+  font-size: 2.1rem;
 }
 
-.pricing-list li {
-  position: relative;
-  padding-left: 28px;
-  font-size: 1rem;
+.lux-price-desc {
+  margin: 0;
+  line-height: 1.75;
+  color: #5d6985;
 }
 
-.pricing-list li::before {
-  content: "✓";
+.lux-price-card.featured .lux-price-desc {
+  color: rgba(255, 255, 255, 0.84);
+}
+
+@media (max-width: 900px) {
+  .lux-price-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .lux-billing-toggle {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .lux-billing-option {
+    padding: 13px 10px;
+    font-size: 0.88rem;
+  }
+}
+.save-pill {
   position: absolute;
-  left: 0;
-  top: 0;
-  color: var(--gold-dark);
-  font-weight: 800;
+  top: -12px;
+  right: -10px;
+
+  background: linear-gradient(135deg, #d8b36a, #f0dfb6);
+  color: #081736;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+
+  padding: 4px 10px;
+  border-radius: 20px;
+
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  white-space: nowrap;
 }
 
-.featured .pricing-list li::before {
-  color: #f0cf8d;
-}
-
-.pricing-card .btn {
-  width: 100%;
-  min-width: unset;
+/* parent must be positioned */
+.pricing-card,
+.lux-billing-option {
+  position: relative;
 }
 
 /* EXPERIENCE PREVIEWS */
