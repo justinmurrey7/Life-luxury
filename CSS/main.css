@@ -42,6 +42,7 @@ img {
   padding: 0 20px 0 140px;
   min-height: 70px;
   flex-wrap: wrap;
+  border-bottom: 2px #d4af37 solid;
 }
 
 /* LOGO */

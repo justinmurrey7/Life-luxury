@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact page</title>
+  </head>
+  <body>
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>about page</title>
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/contact.css" />
+      </head>
+      <body>
+        <!-- Header -->
+        <header class="site-header">
+          <!-- Logo -->
+          <div id="logo">
+            <a href="index.html">
+              <img src="images/life-luxury-logo.png" alt="Life Luxury Logo" />
+            </a>
+          </div>
+
+          <!-- Hamburger -->
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="luxNav"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <!-- NAV -->
+          <nav class="lux-nav" id="luxNav">
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+
+              <li class="has-dropdown" tabindex="0">
+                <a href="#">Fleet ▾</a>
+                <ul class="dropdown">
+                  <li><a href="yachts.html">Yachts</a></li>
+                  <li><a href="jets.html">Private Jets</a></li>
+                  <li><a href="helicopters.html">Helicopters</a></li>
+                  <li><a href="limos.html">Limousines</a></li>
+                </ul>
+              </li>
+
+              <li class="has-dropdown" tabindex="0">
+                <a href="#">Packages/Pricing ▾</a>
+                <ul class="dropdown">
+                  <li><a href="packages.html">Signature Experiences</a></li>
+                  <li><a href="proposal.html">Proposal Packages</a></li>
+                  <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+              </li>
+
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="test.html">TESTING PAGE</a></li>
+            </ul>
+          </nav>
+
+          <!-- CTA -->
+          <div class="header-cta">
+            <a href="contact.html" class="nav-cta">Request Quote</a>
+          </div>
+        </header>
+        <!-- Main Content -->
+        <!-- HERO -->
+        <section class="contact-hero">
+          <div class="contact-hero-overlay"></div>
+          <div class="contact-hero-content">
+            <p class="contact-label">Contact Life Luxury</p>
+            <h1>Start Your Extraordinary Journey</h1>
+            <p>
+              Whether you are planning a private yacht escape, jet getaway,
+              helicopter arrival, or luxury limousine experience, our team is
+              ready to curate every detail with elegance and precision.
+            </p>
+            <a href="#contact-form" class="contact-btn">Plan Your Experience</a>
+          </div>
+        </section>
+
+        <!-- CONTACT INFO + FORM -->
+        <section class="contact-main">
+          <div class="contact-container">
+            <div class="contact-info">
+              <p class="section-label">Get In Touch</p>
+              <h2>Luxury Begins With a Conversation</h2>
+              <p class="contact-text">
+                Connect with our concierge team to begin planning your perfect
+                experience. From first inquiry to final arrival, every detail is
+                handled with care.
+              </p>
+
+              <div class="info-grid">
+                <div class="info-card">
+                  <h3>Phone</h3>
+                  <p>+1 (740) XXX-XXXX</p>
+                </div>
+
+                <div class="info-card">
+                  <h3>Email</h3>
+                  <p>concierge@lifeluxury.com</p>
+                </div>
+
+                <div class="info-card">
+                  <h3>Service Area</h3>
+                  <p>Worldwide Luxury Travel</p>
+                </div>
+
+                <div class="info-card">
+                  <h3>Response Time</h3>
+                  <p>Within 24 Hours</p>
+                </div>
+              </div>
+
+              <div class="contact-promise">
+                <h3>The Life Luxury Promise</h3>
+                <p>
+                  Every experience is tailored with discretion, sophistication,
+                  and seamless attention to detail. We believe luxury is not
+                  only where you go, but how every moment feels along the way.
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-form-wrap" id="contact-form">
+              <form class="luxury-form">
+                <h3>Experience Inquiry</h3>
+
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your full name"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Your email address"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Your phone number"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-method">Preferred Contact Method</label>
+                  <select id="contact-method" name="contact-method">
+                    <option value="">Select an option</option>
+                    <option>Email</option>
+                    <option>Phone</option>
+                    <option>Text</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="experience">Experience Interested In</label>
+                  <select id="experience" name="experience">
+                    <option value="">Select an experience</option>
+                    <option>Luxury Yacht</option>
+                    <option>Private Jet</option>
+                    <option>Helicopter Experience</option>
+                    <option>Luxury Limousine</option>
+                    <option>Custom Multi-Experience Journey</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="date">Preferred Travel Date</label>
+                  <input
+                    type="text"
+                    id="date"
+                    name="date"
+                    placeholder="Preferred date or timeframe"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="message"
+                    >Tell Us About Your Dream Experience</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Share your vision, destination, occasion, or preferred services..."
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="contact-btn form-btn">
+                  Plan My Experience
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!-- EXPERIENCE LINKS -->
+        <section class="contact-experiences">
+          <div class="contact-container">
+            <div class="section-heading">
+              <p class="section-label">Explore</p>
+              <h2>Our Signature Experiences</h2>
+              <p>
+                Discover the world of Life Luxury through our curated travel
+                experiences.
+              </p>
+            </div>
+
+            <div class="experience-grid">
+              <a href="#" class="experience-card">
+                <h3>Luxury Yachts</h3>
+                <p>Elegant escapes on open water with unforgettable service.</p>
+              </a>
+
+              <a href="#" class="experience-card">
+                <h3>Private Jets</h3>
+                <p>
+                  Seamless journeys designed for comfort, privacy, and style.
+                </p>
+              </a>
+
+              <a href="#" class="experience-card">
+                <h3>Helicopter Experiences</h3>
+                <p>
+                  Breathtaking arrivals and scenic travel from a new
+                  perspective.
+                </p>
+              </a>
+
+              <a href="#" class="experience-card">
+                <h3>Luxury Limousines</h3>
+                <p>
+                  Arrive with sophistication and unforgettable first
+                  impressions.
+                </p>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="contact-faq">
+          <div class="contact-container">
+            <div class="section-heading">
+              <p class="section-label">FAQ</p>
+              <h2>Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-grid">
+              <div class="faq-item">
+                <h3>How far in advance should I book?</h3>
+                <p>
+                  We recommend booking as early as possible, especially for
+                  custom or peak-season experiences.
+                </p>
+              </div>
+
+              <div class="faq-item">
+                <h3>Can experiences be customized?</h3>
+                <p>
+                  Yes. Every Life Luxury journey can be tailored to your
+                  destination, style, and preferences.
+                </p>
+              </div>
+
+              <div class="faq-item">
+                <h3>Do you offer concierge planning?</h3>
+                <p>
+                  Yes. Our team can assist with planning every detail from
+                  arrival to departure.
+                </p>
+              </div>
+
+              <div class="faq-item">
+                <h3>Do you handle special occasions?</h3>
+                <p>
+                  Absolutely. We can help create unforgettable moments for
+                  anniversaries, proposals, celebrations, and more.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FINAL CTA -->
+        <section class="contact-cta">
+          <div class="contact-container">
+            <p class="section-label">Begin Today</p>
+            <h2>Your Next Extraordinary Journey Starts Here</h2>
+            <p>
+              Let Life Luxury craft a travel experience defined by elegance,
+              comfort, and unforgettable moments.
+            </p>
+            <a href="#contact-form" class="contact-btn">Start Planning Today</a>
+          </div>
+        </section>
+        <!-- LIFE LUXURY FOOTER -->
+        <footer class="lux-footer">
+          <div class="lux-footer-container">
+            <!-- BRAND -->
+            <div class="lux-footer-col">
+              <h3>Life Luxury</h3>
+              <p>
+                Exclusive yacht, jet, helicopter, and limousine experiences
+                designed for unforgettable moments. Concierge planning. Seamless
+                coordination. White-glove service.
+              </p>
+
+              <!-- SOCIAL ICONS -->
+              <div class="lux-social">
+                <a
+                  class="social-btn"
+                  href="#"
+                  aria-label="Instagram"
+                  title="Instagram"
+                >
+                  <!-- Instagram icon -->
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4a6 6 0 1 1 0 12 6 6 0 0 1 0-12zm0 2a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm6.5-.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0z"
+                    />
+                  </svg>
+                </a>
+
+                <a
+                  class="social-btn"
+                  href="#"
+                  aria-label="Facebook"
+                  title="Facebook"
+                >
+                  <!-- Facebook icon -->
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.6 1.6-1.6H17V4.8c-.4-.1-1.6-.2-3-.2-2.9 0-4.9 1.8-4.9 5V11H6.6v3H9V22h4.5z"
+                    />
+                  </svg>
+                </a>
+
+                <a
+                  class="social-btn"
+                  href="#"
+                  aria-label="YouTube"
+                  title="YouTube"
+                >
+                  <!-- YouTube icon -->
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M21.6 7.2a3 3 0 0 0-2.1-2.1C17.8 4.6 12 4.6 12 4.6s-5.8 0-7.5.5A3 3 0 0 0 2.4 7.2 31.6 31.6 0 0 0 2 12a31.6 31.6 0 0 0 .4 4.8 3 3 0 0 0 2.1 2.1c1.7.5 7.5.5 7.5.5s5.8 0 7.5-.5a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 22 12a31.6 31.6 0 0 0-.4-4.8zM10 15.5v-7l6 3.5-6 3.5z"
+                    />
+                  </svg>
+                </a>
+
+                <a
+                  class="social-btn"
+                  href="#"
+                  aria-label="TikTok"
+                  title="TikTok"
+                >
+                  <!-- TikTok icon (simple) -->
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M14 3v9.2a3.8 3.8 0 1 1-3.2-3.7V6.3a6.2 6.2 0 1 0 5.7 6.2V8.6c1.2 1 2.7 1.6 4.3 1.6V7.6c-2 0-3.8-1.7-3.8-4.6H14z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- EXPLORE -->
+            <div class="lux-footer-col">
+              <h4>Explore</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fleet.html">Fleet</a></li>
+                <li><a href="packages.html">Signature Experiences</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Request a Quote</a></li>
+              </ul>
+            </div>
+
+            <!-- SERVICES -->
+            <div class="lux-footer-col">
+              <h4>Services</h4>
+              <ul>
+                <li><a href="#">Luxury Yachts</a></li>
+                <li><a href="#">Private Jets</a></li>
+                <li><a href="#">Helicopters</a></li>
+                <li><a href="#">Limousines</a></li>
+                <li><a href="#">Proposal Packages</a></li>
+              </ul>
+            </div>
+
+            <!-- NEWSLETTER -->
+            <div class="lux-footer-col">
+              <h4>Newsletter</h4>
+              <p class="lux-muted">
+                Get new experiences, seasonal destinations, and VIP offers.
+              </p>
+
+              <form class="lux-newsletter" action="#" method="post">
+                <label class="sr-only" for="newsletterEmail"
+                  >Email address</label
+                >
+                <input
+                  id="newsletterEmail"
+                  name="email"
+                  type="email"
+                  placeholder="Email address"
+                  required
+                />
+                <button type="submit">Join</button>
+              </form>
+
+              <p class="lux-legal-note">
+                By subscribing, you agree to receive emails from Life Luxury.
+              </p>
+            </div>
+          </div>
+
+          <!-- LEGAL LINKS + COPYRIGHT -->
+          <div class="lux-footer-bottom">
+            <div class="lux-legal-links">
+              <a href="privacy.html">Privacy Policy</a>
+              <span class="lux-dot">•</span>
+              <a href="terms.html">Terms</a>
+              <span class="lux-dot">•</span>
+              <a href="cookies.html">Cookies</a>
+              <span class="lux-dot">•</span>
+              <a href="accessibility.html">Accessibility</a>
+            </div>
+
+            <p class="lux-copy">© 2026 Life Luxury. All rights reserved.</p>
+          </div>
+        </footer>
+
+        <!-- FLOATING BUTTONS -->
+        <button
+          class="lux-float lux-chat"
+          id="luxChatBtn"
+          aria-label="Concierge Chat"
+        >
+          Concierge
+        </button>
+
+        <button
+          class="lux-float lux-top"
+          id="backToTop"
+          aria-label="Back to top"
+        >
+          ↑
+        </button>
+        <script src="JS/footer.js"></script>
+      </body>
+    </html>
+  </body>
+</html>
